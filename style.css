@@ -1,0 +1,23 @@
+.tableHeaderR {
+  
+  font-weight: bold;
+
+}
+
+
+.outer-content{
+	
+	text-align: center;
+	align-content: left;
+	width: 75%;
+	padding: 20px;
+	background-color: rgb(255,192,203);
+}
+
+.inner-content{
+	
+	display: inline-block;
+	margin: 0 auto;
+	width: 75%;
+	background-color: blue;
+}
