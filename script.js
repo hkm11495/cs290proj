@@ -18,7 +18,14 @@ function createTable()
 			var cell=document.createElement("TD");
 			row.appendChild(cell);
 	
-			var celltext=document.createTextNode(i + "," +j);
+			if (i==0)
+			{
+				var celltext=document.createTextNode("Header " + (j+1));
+			}
+			else
+			{
+				var celltext=document.createTextNode((i) + "," + (j+1));
+			}
 			cell.appendChild(celltext);
 		}
 	}
