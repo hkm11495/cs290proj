@@ -57,7 +57,7 @@ function moveDown(oldCell)
 
 function moveRight(oldCell)
 {
-	var newCell=oldCell.siblingAbove
+	var newCell=oldCell.siblingAbove;
 	oldCell.style.border="thin solid #0000FF";
 	selectedCell=newCell;
 	selectedCell.style.border="thick solid #0000FF";
@@ -66,7 +66,7 @@ function moveRight(oldCell)
 
 function moveLeft(oldCell)
 {
-	var newCell=oldCell.siblingBelow
+	var newCell=oldCell.siblingBelow;
 	oldCell.style.border="thin solid #0000FF";
 	selectedCell=newCell;
 	selectedCell.style.border="thick solid #0000FF";
