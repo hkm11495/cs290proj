@@ -1,5 +1,6 @@
 //HW4 script
 
+// returns table created
 function createTable()
 {
 	
@@ -30,16 +31,24 @@ function createTable()
 			cell.appendChild(celltext);
 		}
 	}
+	return table;
 }
 
-function initializeCell()
+//recieves a table and initializes first cell
+//returns initialzed cell
+function initializeCell( sTable)
 {
-	//document.
+	var sRow=sTable.firstElementChild;
+	var sCell=sRow.firstElementChild;
+	sCell.style.border="thin solid #0000FF";
+	return sCell;
 }
 
 
-createTable();
+var TBL=createTable();
+var selectedCell=initializeCell(TBL);
 
+//Create Buttons
 var upBtn=document.createElement("BUTTON");
 upBtn.innerHTML = "Up"; 
 document.body.appendChild(upBtn);
@@ -55,4 +64,5 @@ document.body.appendChild(leftBtn);
 var rightBtn=document.createElement("BUTTON");
 rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
+
 
