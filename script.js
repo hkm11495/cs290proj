@@ -40,7 +40,7 @@ function initializeCell( sTable)
 {
 	var sRow=sTable.firstElementChild;
 	var sCell=sRow.firstElementChild;
-	sCell.style.border="thin solid #0000FF";
+	sCell.style.border="thick solid #0000FF";
 	return sCell;
 }
 
