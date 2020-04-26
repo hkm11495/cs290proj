@@ -26,11 +26,12 @@ function createTable()
 			
 			if (i==0)
 			{
-				cell.setAttribute("id","HeaderCell");
+				sCell.setAttribute("id","Selected");
 				var celltext=document.createTextNode("Header " + (j+1));
 			}
 			else
 			{
+				sCell.setAttribute("id","notSelected");
 				var celltext=document.createTextNode((i) + "," + (j+1));
 			}
 			cell.appendChild(celltext);
@@ -47,6 +48,7 @@ function initializeCell( sTable)
 	var sRow=sTable.firstElementChild;
 	sRow=sRow.nextElementSibling;
 	var sCell=sRow.firstElementChild;
+	sCell.setAttribute("id","Selected");
 	sCell.style.border="thick solid #0000FF";
 	return sCell;
 }
@@ -118,7 +120,7 @@ rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
 //If buttons are clicked
-document.getElementById("upButton").addEventListener("click", moveUp(selectedCell));
-document.getElementById("downButton").addEventListener("click", moveDown(selectedCell));
-document.getElementById("leftButton").addEventListener("click",moveLeft(selectedCell));
-document.getElementById("rightButton").addEventListener("click",moveRight(selectedCell));
+upBtn.addEventListener("click", moveUp(selectedCell));
+downBtn.addEventListener("click", moveDown(selectedCell));
+leftBtn.addEventListener("click",moveLeft(selectedCell));
+rightBtn.addEventListener("click",moveRight(selectedCell));
