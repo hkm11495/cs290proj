@@ -58,19 +58,17 @@ function moveDown(oldCell)
 
 function moveRight(oldCell)
 {
-	var rightCell=oldCell.siblingAbove;
+	selectedCell=oldCell.nextElementSibling;
 	oldCell.style.border="thin solid #0000FF";
-	selectedCell=rightCell;
-	rightCell.style.border="thick solid #0000FF";
+	selectedCell.style.border="thick solid #0000FF";
 	
 }
 
 function moveLeft(oldCell)
 {
-	var leftCell=oldCell.siblingBelow;
+	selectedCell=oldCell.previousElementSibling;
 	oldCell.style.border="thin solid #0000FF";
-	selectedCell=leftCell;
-	leftCell.style.border="thick solid #0000FF";
+	selectedCell.style.border="thick solid #0000FF";
 }
 
 //create table
