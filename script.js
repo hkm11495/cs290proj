@@ -6,7 +6,7 @@ function createTable()
 	var table = document.createElement("TABLE");
 	table.setAttribute("id", "table1");
 	document.body.appendChild(table);
-	
+	document.getElementById("table1").style.border="thick solid #0000FF";
 	
 	for (var i=0; i<4; i++)
 	{
