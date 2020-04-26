@@ -63,7 +63,7 @@ function moveDown(oldCell)
 
 function moveRight(oldCell)
 {
-	if(oldCell.previousElementSibling ==="undefined")
+	if(oldCell.previousElementSibling ==="undefined" || !oldCell.nextElementSibling)
 	{
 		return;
 	}
@@ -77,7 +77,7 @@ function moveRight(oldCell)
 
 function moveLeft(oldCell)
 {
-	if(oldCell.previousElementSibling ==="undefined")
+	if(oldCell.previousElementSibling ==="undefined" || !oldCell.previousElementSibling)
 	{
 		return;
 	}
