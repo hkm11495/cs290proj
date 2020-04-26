@@ -39,6 +39,7 @@ function createTable()
 function initializeCell( sTable)
 {
 	var sRow=sTable.firstElementChild;
+	sRow=sRow.nextElementSibling;
 	var sCell=sRow.firstElementChild;
 	sCell.style.border="thick solid #0000FF";
 	return sCell;
