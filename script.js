@@ -67,10 +67,12 @@ function moveRight(oldCell)
 	{
 		return;
 	}
-	selectedCell=oldCell.nextElementSibling;
-	oldCell.style.border="thin solid #0000FF";
-	selectedCell.style.border="thick solid #0000FF";
-	
+	else
+	{
+		selectedCell=oldCell.nextElementSibling;
+		oldCell.style.border="thin solid #0000FF";
+		selectedCell.style.border="thick solid #0000FF";
+	}
 }
 
 function moveLeft(oldCell)
@@ -79,9 +81,13 @@ function moveLeft(oldCell)
 	{
 		return;
 	}
-	selectedCell=oldCell.previousElementSibling;
-	oldCell.style.border="thin solid #0000FF";
-	selectedCell.style.border="thick solid #0000FF";
+	else
+	{
+		selectedCell=oldCell.previousElementSibling;
+		oldCell.style.border="thin solid #0000FF";
+		selectedCell.style.border="thick solid #0000FF";	
+	}
+
 }
 
 //create table
