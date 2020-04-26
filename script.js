@@ -32,5 +32,23 @@ function createTable()
 	}
 }
 
+function initializeCell()
+{
+	
+}
+
 
 createTable();
+
+var upBtn=document.createElement("BUTTON");
+upBtn.innerHTML = "Up"; 
+
+var downBtn=document.createElement("BUTTON");
+downBtn.innerHTML = "Down";
+
+var leftBtn=document.createElement("BUTTON");
+leftBtn.innerHTML = "Left";
+
+var rightBtn=document.createElement("BUTTON");
+rightBtn.innerHTML = "Right";
+
