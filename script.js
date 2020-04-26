@@ -34,6 +34,12 @@ function createTable()
 	return table;
 }
 
+//If buttons are clicked
+upBtn.addEventListener("click", moveUp(selectedCell));
+downBtn.addEventListener("click", moveDown(selectedCell));
+leftBtn.addEventListener("click",moveLeft(selectedCell));
+rightBtn.addEventListener("click",rightLeft(selectedCell));
+
 //recieves a table and initializes first cell
 //returns initialzed cell
 function initializeCell( sTable)
@@ -92,8 +98,4 @@ var rightBtn=document.createElement("BUTTON");
 rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
-//If buttons are clicked
-upBtn.addEventListener("click", moveUp(selectedCell));
-downBtn.addEventListener("click", moveDown(selectedCell));
-leftBtn.addEventListener("click",moveLeft(selectedCell));
-rightBtn.addEventListener("click",rightLeft(selectedCell));
+
