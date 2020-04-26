@@ -45,6 +45,32 @@ function initializeCell( sTable)
 	return sCell;
 }
 
+function moveUp(oldCell)
+{
+	
+}
+
+function moveDown(oldCell)
+{
+	
+}
+
+function moveRight(oldCell)
+{
+	var newCell=oldCell.siblingAbove
+	oldCell.style.border="thin solid #0000FF";
+	selectedCell=newCell;
+	selectedCell.style.border="thick solid #0000FF";
+	
+}
+
+function moveLeft(oldCell)
+{
+	var newCell=oldCell.siblingBelow
+	oldCell.style.border="thin solid #0000FF";
+	selectedCell=newCell;
+	selectedCell.style.border="thick solid #0000FF";
+}
 
 var TBL=createTable();
 var selectedCell=initializeCell(TBL);
@@ -66,4 +92,8 @@ var rightBtn=document.createElement("BUTTON");
 rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
-
+//If buttons are clicked
+upBtn.addEventListener("click", moveUp(selectedCell));
+downBtn.addEventListener("click", moveDown(selectedCell));
+leftBtn.addEventListener("click",moveLeft(selectedCell));
+rightBtn.addEventListener("click",rightLeft(selectedCell));
