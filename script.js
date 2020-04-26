@@ -2,8 +2,10 @@
 
 function tableValues()
 {
-	var table=document.getElementById("table1");
-	var row=table.insertRow(0);
+	var table = document.getElementById("myTable");
+
+	// Create an empty <tr> element and add it to the 1st position of the table:
+	var row = table.insertRow(0);
 	var cell1 = row.insertCell(0);
 	var cell2 = row.insertCell(1);
 
