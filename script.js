@@ -34,11 +34,6 @@ function createTable()
 	return table;
 }
 
-//If buttons are clicked
-upBtn.addEventListener("click", moveUp(selectedCell));
-downBtn.addEventListener("click", moveDown(selectedCell));
-leftBtn.addEventListener("click",moveLeft(selectedCell));
-rightBtn.addEventListener("click",rightLeft(selectedCell));
 
 //recieves a table and initializes first cell
 //returns initialzed cell
@@ -63,22 +58,25 @@ function moveDown(oldCell)
 
 function moveRight(oldCell)
 {
-	var newCell=oldCell.siblingAbove;
+	var rightCell=oldCell.siblingAbove;
 	oldCell.style.border="thin solid #0000FF";
-	selectedCell=newCell;
-	newCell.style.border="thick solid #0000FF";
+	selectedCell=rightCell;
+	rightCell.style.border="thick solid #0000FF";
 	
 }
 
 function moveLeft(oldCell)
 {
-	var newCell=oldCell.siblingBelow;
+	var leftCell=oldCell.siblingBelow;
 	oldCell.style.border="thin solid #0000FF";
-	selectedCell=newCell;
-	newCell.style.border="thick solid #0000FF";
+	selectedCell=leftCell;
+	leftCell.style.border="thick solid #0000FF";
 }
 
+//create table
 var TBL=createTable();
+
+//initialize table 
 var selectedCell=initializeCell(TBL);
 
 //Create Buttons
@@ -98,4 +96,8 @@ var rightBtn=document.createElement("BUTTON");
 rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
-
+//If buttons are clicked
+upBtn.addEventListener("click", moveUp(selectedCell));
+downBtn.addEventListener("click", moveDown(selectedCell));
+leftBtn.addEventListener("click",moveLeft(selectedCell));
+rightBtn.addEventListener("click",rightLeft(selectedCell));
