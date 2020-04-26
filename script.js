@@ -13,6 +13,10 @@ function createTable()
 	{
 		var row=document.createElement("TR");
 		table.appendChild(row);
+		if (i==0)
+		{
+			row.setAttribute("id","HeaderRow");
+		}
 		
 		for (var j=0; j<4; j++)
 		{
@@ -22,6 +26,7 @@ function createTable()
 			
 			if (i==0)
 			{
+				cell.setAttribute("id","HeaderCell");
 				var celltext=document.createTextNode("Header " + (j+1));
 			}
 			else
@@ -58,6 +63,10 @@ function moveDown(oldCell)
 
 function moveRight(oldCell)
 {
+	if(oldCell.previousElementSibling ==="undefined")
+	{
+		return;
+	}
 	selectedCell=oldCell.nextElementSibling;
 	oldCell.style.border="thin solid #0000FF";
 	selectedCell.style.border="thick solid #0000FF";
@@ -66,6 +75,10 @@ function moveRight(oldCell)
 
 function moveLeft(oldCell)
 {
+	if(oldCell.previousElementSibling ==="undefined")
+	{
+		return;
+	}
 	selectedCell=oldCell.previousElementSibling;
 	oldCell.style.border="thin solid #0000FF";
 	selectedCell.style.border="thick solid #0000FF";
