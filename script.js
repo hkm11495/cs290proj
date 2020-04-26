@@ -117,4 +117,4 @@ document.body.appendChild(rightBtn);
 upBtn.addEventListener("click", moveUp(selectedCell));
 downBtn.addEventListener("click", moveDown(selectedCell));
 leftBtn.addEventListener("click",moveLeft(selectedCell));
-rightBtn.addEventListener("click",rightLeft(selectedCell));
+rightBtn.addEventListener("click",moveLeft(selectedCell));
