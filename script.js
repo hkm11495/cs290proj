@@ -26,12 +26,12 @@ function createTable()
 			
 			if (i==0)
 			{
-				sCell.setAttribute("id","Selected");
+				cell.setAttribute("id","Selected");
 				var celltext=document.createTextNode("Header " + (j+1));
 			}
 			else
 			{
-				sCell.setAttribute("id","notSelected");
+				cell.setAttribute("id","notSelected");
 				var celltext=document.createTextNode((i) + "," + (j+1));
 			}
 			cell.appendChild(celltext);
