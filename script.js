@@ -13,7 +13,7 @@ function createTable()
 			
 			var cell=row.insertCell(j);
 			
-			cell.innerHTML=i + "," + j;
+			cell.innerHTML="cell";
 		}
 	}
 	
