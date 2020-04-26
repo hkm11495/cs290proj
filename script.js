@@ -98,23 +98,27 @@ var selectedCell=initializeCell(TBL);
 
 //Create Buttons
 var upBtn=document.createElement("BUTTON");
+upBtn.setAttribute("id","upButton");
 upBtn.innerHTML = "Up"; 
 document.body.appendChild(upBtn);
 
 var downBtn=document.createElement("BUTTON");
+downBtn.setAttribute("id","downButton");
 downBtn.innerHTML = "Down";
 document.body.appendChild(downBtn);
 
 var leftBtn=document.createElement("BUTTON");
+leftBtn.setAttribute("id","leftButton");
 leftBtn.innerHTML = "Left";
 document.body.appendChild(leftBtn);
 
 var rightBtn=document.createElement("BUTTON");
+rightBtn.setAttribute("id","rightButton");
 rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
 //If buttons are clicked
-upBtn.addEventListener("click", moveUp(selectedCell));
-downBtn.addEventListener("click", moveDown(selectedCell));
-leftBtn.addEventListener("click",moveLeft(selectedCell));
-rightBtn.addEventListener("click",moveRight(selectedCell));
+document.getElementById("upButton").addEventListener("click", moveUp(selectedCell));
+document.getElementById("downButton").addEventListener("click", moveDown(selectedCell));
+document.getElementById("leftButton").addEventListener("click",moveLeft(selectedCell));
+document.getElementById("rightButton").addEventListener("click",moveRight(selectedCell));
