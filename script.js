@@ -5,8 +5,15 @@ function createTable()
 	
 	var table = document.createElement("TABLE");
 	table.setAttribute("id", "table1");
-	document.body.appendChild(x);
+	document.body.appendChild(table);
 	
+	var row=document.createElement("TR");
+	document.getElementById("table1").appendChild(row);
+	
+	var cell=document.createElement("TD");
+	row.appendChild(celltext);
+	var celltext=document.createTextNode("cell");
+	cell.appendChild(celltext);
 	/*
 	for (var i=0; i<4; i++)
 	{
