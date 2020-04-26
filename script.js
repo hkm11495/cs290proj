@@ -60,7 +60,7 @@ function moveRight(oldCell)
 	var newCell=oldCell.siblingAbove;
 	oldCell.style.border="thin solid #0000FF";
 	selectedCell=newCell;
-	selectedCell.style.border="thick solid #0000FF";
+	newCell.style.border="thick solid #0000FF";
 	
 }
 
@@ -69,7 +69,7 @@ function moveLeft(oldCell)
 	var newCell=oldCell.siblingBelow;
 	oldCell.style.border="thin solid #0000FF";
 	selectedCell=newCell;
-	selectedCell.style.border="thick solid #0000FF";
+	newCell.style.border="thick solid #0000FF";
 }
 
 var TBL=createTable();
