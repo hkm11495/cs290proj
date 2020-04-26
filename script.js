@@ -34,7 +34,7 @@ function createTable()
 
 function initializeCell()
 {
-	
+	document.
 }
 
 
@@ -42,13 +42,17 @@ createTable();
 
 var upBtn=document.createElement("BUTTON");
 upBtn.innerHTML = "Up"; 
+document.body.appendChild(upBtn);
 
 var downBtn=document.createElement("BUTTON");
 downBtn.innerHTML = "Down";
+document.body.appendChild(downBtn);
 
 var leftBtn=document.createElement("BUTTON");
 leftBtn.innerHTML = "Left";
+document.body.appendChild(leftBtn);
 
 var rightBtn=document.createElement("BUTTON");
 rightBtn.innerHTML = "Right";
+document.body.appendChild(rightBtn);
 
