@@ -53,40 +53,40 @@ function initializeCell( sTable)
 	return sCell;
 }
 
-function moveUp(oldCell)
+function moveUp()
 {
 	
 }
 
-function moveDown(oldCell)
+function moveDown()
 {
 	
 }
 
-function moveRight(oldCell)
+function moveRight()
 {
-	if(oldCell.previousElementSibling ==="undefined" || !oldCell.nextElementSibling)
+	if(selectedCell.previousElementSibling ==="undefined" || !selectedCell.nextElementSibling)
 	{
 		return;
 	}
 	else
 	{
-		selectedCell=oldCell.nextElementSibling;
-		oldCell.style.border="thin solid #0000FF";
+		selectedCell.style.border="thin solid #0000FF";
+		selectedCell=selectedCell.nextElementSibling;
 		selectedCell.style.border="thick solid #0000FF";
 	}
 }
 
-function moveLeft(oldCell)
+function moveLeft()
 {
-	if(oldCell.previousElementSibling ==="undefined" || !oldCell.previousElementSibling)
+	if(selectedCell.previousElementSibling ==="undefined" || !selectedCell.previousElementSibling)
 	{
 		return;
 	}
 	else
 	{
-		selectedCell=oldCell.previousElementSibling;
-		oldCell.style.border="thin solid #0000FF";
+		selectedCell.style.border="thin solid #0000FF";
+		selectedCell=selectedCell.previousElementSibling;
 		selectedCell.style.border="thick solid #0000FF";	
 	}
 
@@ -120,7 +120,7 @@ rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
 //If buttons are clicked
-upBtn.addEventListener("click", moveUp(selectedCell));
-downBtn.addEventListener("click", moveDown(selectedCell));
-leftBtn.addEventListener("click",moveLeft(selectedCell));
-rightBtn.addEventListener("click",moveRight(selectedCell));
+upBtn.addEventListener("click", moveUp);
+downBtn.addEventListener("click", moveDown);
+leftBtn.addEventListener("click",moveLeft);
+rightBtn.addEventListener("click",moveRight);
