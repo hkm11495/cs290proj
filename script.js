@@ -30,12 +30,12 @@ function createTable()
 			
 			if (i==0)
 			{
-				cell.setAttribute("id","Selected");
+				//cell.setAttribute("id","Selected");
 				var celltext=document.createTextNode("Header " + (j+1));
 			}
 			else
 			{
-				cell.setAttribute("id","notSelected");
+				//cell.setAttribute("id","notSelected");
 				var celltext=document.createTextNode((i) + "," + (j+1));
 			}
 			cell.appendChild(celltext);
@@ -81,6 +81,11 @@ function moveDown()
 	{
 		selectedCell.style.border="thin solid #0000FF";
 		selectedCell=selectedCell.parentElement.nextElementSibling.firstElementChild;
+		for (var i=0; i<rlCounter; i++)
+		{
+			selectedCell=selectedCell.nextElementSibling;
+		}
+		
 		selectedCell.style.border="thick solid #0000FF";
 	}
 }
@@ -115,7 +120,6 @@ function moveLeft()
 		{
 			rlCounter--;
 		}
-
 		selectedCell.style.border="thin solid #0000FF";
 		selectedCell=selectedCell.previousElementSibling;
 		selectedCell.style.border="thick solid #0000FF";	
