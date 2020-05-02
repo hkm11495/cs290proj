@@ -174,7 +174,7 @@ rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
 var markCell=document.createElement("BUTTON");
-markCell.("id","markCellButton");
+markCell.setAttribute("id","markCellButton");
 markCell.innerHTML="Mark Cell";
 document.body.appendChild(markCell);
 
