@@ -73,7 +73,7 @@ function moveUp()
 
 function moveDown()
 {
-	if(selectedRow.nextElementSibling ==="undefined" || !selectedRow.nextElementSibling)
+	if(selectedCell.parentElement.nextElementSibling.firstElementChild ==="undefined" || !selectedCell.parentElement.nextElementSibling.firstElementChild)
 	{
 		return;
 	}
