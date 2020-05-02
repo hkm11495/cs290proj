@@ -17,11 +17,7 @@ function createTable()
 		{
 			row.setAttribute("id","HeaderRow");
 		}
-		else
-		{
-			row.setAttribute("id", "NonHeaderRow")
-		}
-		
+
 		for (var j=0; j<4; j++)
 		{
 			var cell=document.createElement("TD");
@@ -30,12 +26,11 @@ function createTable()
 			
 			if (i==0)
 			{
-				//cell.setAttribute("id","Selected");
+				cell.setAttribute("id","HeaderCell");
 				var celltext=document.createTextNode("Header " + (j+1));
 			}
 			else
 			{
-				//cell.setAttribute("id","notSelected");
 				var celltext=document.createTextNode((i) + "," + (j+1));
 			}
 			cell.appendChild(celltext);
@@ -68,7 +63,7 @@ function initializeRow( sTable)
 
 function moveUp()
 {
-	if(selectedCell.parentElement.previousElementSibling.id="HeaderRow" || !selectedCell.parentElement.previousElementSibling)
+	if(selectedCell.parentElement.previousElementSibling.id=="HeaderRow" || !selectedCell.parentElement.previousElementSibling)
 	{
 		return;
 	}
