@@ -80,8 +80,8 @@ function moveDown()
 	else
 	{
 		selectedCell.style.border="thin solid #0000FF";
-		selectedRow=selectedRow.NextElementSibling;
-		selectedRow.style.border="thick solid #0000FF";
+		selectedCell=selectedCell.parentElement.nextElementSibling.firstElementChild;
+		selectedCell.style.border="thick solid #0000FF";
 	}
 }
 
