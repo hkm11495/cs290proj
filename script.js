@@ -73,32 +73,21 @@ function moveUp()
 
 function moveDown()
 {
-	if(selectedRow.previousElementSibling ==="undefined" || !selectedRow.nextElementSibling)
+	if(selectedRow.nextElementSibling ==="undefined" || !selectedRow.nextElementSibling)
 	{
 		return;
 	}
 	else
 	{
 		selectedCell.style.border="thin solid #0000FF";
-		selectedRow.style.border="thin solid #0000FF";
-		selectedRow=selectedRow.nextElementSibling;
+		selectedRow=selectedRow.NextElementSibling;
 		selectedRow.style.border="thick solid #0000FF";
-		//selectedCell=selectedRow.FirstElementChild;
-		//selectedCell.style.border="thick solid #0000FF";
-	/*
-		for (var i=0;i>rlCounter; i++)
-		{
-			selectedCell=selectedCell.nextElementSibling;
-		}
-
-		selectedCell.style.border="thick solid #0000FF";
-		*/
 	}
 }
 
 function moveRight()
 {
-	if(selectedCell.previousElementSibling ==="undefined" || !selectedCell.nextElementSibling)
+	if(selectedCell.nextElementSibling ==="undefined" || !selectedCell.nextElementSibling)
 	{
 		return;
 	}
