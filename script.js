@@ -17,6 +17,10 @@ function createTable()
 		{
 			row.setAttribute("id","HeaderRow");
 		}
+		else
+		{
+			row.setAttribute("id", "NonHeaderRow")
+		}
 		
 		for (var j=0; j<4; j++)
 		{
@@ -45,13 +49,21 @@ function createTable()
 //returns initialzed cell
 function initializeCell( sTable)
 {
-	var sRow=sTable.firstElementChild;
-	sRow=sRow.nextElementSibling;
+
 	var sCell=sRow.firstElementChild;
 	sCell.setAttribute("id","Selected");
 	sCell.style.border="thick solid #0000FF";
 	return sCell;
 }
+
+
+function initializeRow( sTable)
+{
+	var sRow=sTable.firstElementChild;
+	sRow=sRow.nextElementSibling;
+	return sRow;
+}
+
 
 function moveUp()
 {
@@ -60,7 +72,21 @@ function moveUp()
 
 function moveDown()
 {
-	
+	if(selectedRow.previousElementSibling ==="undefined" || !selectedRow.nextElementSibling)
+	{
+		return;
+	}
+	else
+	{
+		selectedCell.style.border="thin solid #0000FF";
+		selectedRow=selectedRow.nextElementSibling;
+		selectedCell=selectedRow.FirstElementChild
+		for (var i=0;i>rlCounter; i++)
+		{
+			selectedCell=selectedCell.nextElementSibling;
+		}
+		selectedCell.style.border="thick solid #0000FF";
+	}
 }
 
 function moveRight()
@@ -71,6 +97,10 @@ function moveRight()
 	}
 	else
 	{
+		if (rlCounter != 3)
+		{
+			rlCounter++;
+		}
 		selectedCell.style.border="thin solid #0000FF";
 		selectedCell=selectedCell.nextElementSibling;
 		selectedCell.style.border="thick solid #0000FF";
@@ -85,18 +115,25 @@ function moveLeft()
 	}
 	else
 	{
+		if (rlCounter != 0)
+		{
+			rlCounter--;
+		}
+
 		selectedCell.style.border="thin solid #0000FF";
 		selectedCell=selectedCell.previousElementSibling;
 		selectedCell.style.border="thick solid #0000FF";	
 	}
 
 }
+var rlCounter=0;
 
 //create table
 var TBL=createTable();
 
 //initialize table 
 var selectedCell=initializeCell(TBL);
+var selectedRow=initializeRow(TBL);
 
 //Create Buttons
 var upBtn=document.createElement("BUTTON");
@@ -118,6 +155,8 @@ var rightBtn=document.createElement("BUTTON");
 rightBtn.setAttribute("id","rightButton");
 rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
+
+
 
 //If buttons are clicked
 upBtn.addEventListener("click", moveUp);
