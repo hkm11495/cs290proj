@@ -49,7 +49,8 @@ function createTable()
 //returns initialzed cell
 function initializeCell( sTable)
 {
-
+	var sRow=sTable.firstElementChild;
+	sRow=sRow.nextElementSibling;
 	var sCell=sRow.firstElementChild;
 	sCell.setAttribute("id","Selected");
 	sCell.style.border="thick solid #0000FF";
