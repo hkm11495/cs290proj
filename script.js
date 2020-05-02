@@ -68,7 +68,21 @@ function initializeRow( sTable)
 
 function moveUp()
 {
-	
+	if(selectedCell.parentElement.previousElementSibling.id="HeaderRow" || !selectedCell.parentElement.previousElementSibling)
+	{
+		return;
+	}
+	else
+	{
+		selectedCell.style.border="thin solid #0000FF";
+		selectedCell=selectedCell.parentElement.previousElementSibling.firstElementChild;
+		for (var i=0; i<rlCounter; i++)
+		{
+			selectedCell=selectedCell.nextElementSibling;
+		}
+		
+		selectedCell.style.border="thick solid #0000FF";
+	}
 }
 
 function moveDown()
