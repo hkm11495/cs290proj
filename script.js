@@ -135,6 +135,14 @@ function moveLeft()
 	}
 
 }
+
+function changeColor()
+{
+	selectedCell.style.backgroundColor="yellow";
+}
+
+
+//for moving left and right when rows are changed
 var rlCounter=0;
 
 //create table
@@ -165,6 +173,10 @@ rightBtn.setAttribute("id","rightButton");
 rightBtn.innerHTML = "Right";
 document.body.appendChild(rightBtn);
 
+var markCell=document.createElement("BUTTON");
+markCell.("id","markCellButton");
+markCell.innerHTML="Mark Cell";
+document.body.appendChild(markCell);
 
 
 //If buttons are clicked
@@ -172,3 +184,4 @@ upBtn.addEventListener("click", moveUp);
 downBtn.addEventListener("click", moveDown);
 leftBtn.addEventListener("click",moveLeft);
 rightBtn.addEventListener("click",moveRight);
+markCell.addEventListener("click",changeColor);
