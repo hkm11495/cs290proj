@@ -1,0 +1,56 @@
+  
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title> CS 290 Assignment 2</title>
+		<link href="styling.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+  
+	
+	<!--**************PROBLEM #4 **************-->		
+			<!--Form which will send a Get request to current URL -->	
+			<h1>Weather Data</h1>
+		
+			<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+				<!-- city name -->	
+				<div>
+					<label for="CITY_NAME"> Enter city name: </label>
+						<input type="text" name="CITY_NAME" id="CITY_NAME" required
+							minlength="1" maxlength="12" size="10">
+				</div>
+				<div>
+				  <p> Or </p>
+				</div>
+				<!-- zipcode -->
+				<div>
+					<label for="ZIP_CODE"> Enter zip code: </label>
+						<input type="text" name="ZIP_CODE" id="ZIP_CODE" required
+							minlength="4" maxlength="12" size="10">
+				</div>
+					
+				<!-- country code -->
+				<div>
+						<label for="COUNTRY_CODE"> Enter country code: </label>
+						<input type="text" name="COUNTRY_CODE" id="COUNTRY_CODE" required
+							minlength="4" maxlength="12" size="10">
+				</div>
+				
+				<!--Radio Inputs -->
+				<div>
+					<p> Please select one of the following candies: </p>
+				</div>
+				
+					
+				<div>
+					<input type="submit" value="Submit">
+				</div>
+				
+			</form>
+							
+	</body>
+</html>
