@@ -18,7 +18,7 @@
    
           payload.longUrl = document.getElementById('longUrl').value;
 		  <!--false means synchronous request-->
-          req.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=city,country&appid=5254bba1382a3407c2af112214612a51", false);
+          req.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&appid=5254bba1382a3407c2af112214612a51", false);
           req.send(null);
 		  <!--response=data retrieved from the request-->
           var response = JSON.parse(req.responseText);
