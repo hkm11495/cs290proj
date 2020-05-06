@@ -8,25 +8,27 @@
 
       function bindButtons()
 	  {
-	      console.log("in function");
+	      console.log("1");
 		  var city=document.getElementById('CITY_NAME').textContent;
 		  var zip=document.getElementById('ZIP_CODE').textContent;
 		  var country=document.getElementById('COUNTRY_CODE').textContent;
-        
+          console.log("2");
 		  <!--Click submit button-->
 		  document.getElementById('urlSubmit').addEventListener('click', 
 		  function(event)
 		  {
-            <!--object that can make an HTTP request and return the data it gets from that request.-->
+            console.log("3");
+			<!--object that can make an HTTP request and return the data it gets from that request.-->
 	  	    var req = new XMLHttpRequest();
    
-            payload.longUrl = document.getElementById('longUrl').value;
 		    <!--false means synchronous request, true=asynchronous-->
             req.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&appid=5254bba1382a3407c2af112214612a51", true);
+			console.log("4");
             req.send(null);
 		    <!--response=data retrieved from the request-->
 			if (req.status >=200 && req.status <400)
 			{
+			  console.log("5");
 		      console.log(JSON.parse(req.responseText));
 			}
 			else
