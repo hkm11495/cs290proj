@@ -5,7 +5,8 @@
 	<title> CS 290 Activity 5 </title>
     <script>
 	 <!-- GET REQUEST-->
-      document.getElementById('urlSubmit').addEventListener('click', bindButtons);
+      const form=document.getElementById('getForm');
+	  form.AddEventListener('submit',bindButtons);
 
       function bindButtons()
 	  {
@@ -42,7 +43,7 @@
 	 
   </head>
   <body>
-    <form>
+    <form id="getForm">
       <fieldset>
         <legend>Weather Input (GET) </legend>
         <label for="CITY_NAME"> City: </label>
@@ -51,14 +52,13 @@
         <input type="text" name="ZIP_CODE" id="ZIP_CODE">
 		<label for="COUNTRY_CODE"> Country: </label>
         <input type="text" name="COUNTRY_CODE" id="COUNTRY_CODE">
-        <input type="submit" id="urlSubmit">
+        <button type="submit" id="urlSubmit"> Submit </button>
       </fieldset>
     </form>
     <div>
       <h2>Result</h2>
       <ul>
         <li><span>Current Weather:</span><span id="weather"></span></li>
-    
       </ul>
     </div>
   </body>
