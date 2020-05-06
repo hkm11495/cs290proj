@@ -6,14 +6,13 @@
     <script>
 	 <!-- GET REQUEST-->
       document.addEventListener('DOMContentLoaded', bindButtons);
+
+      function bindButtons()
+	  {
+	      console.log("1");
 		  var city=document.getElementById('CITY_NAME').textContent;
 		  var zip=document.getElementById('ZIP_CODE').textContent;
 		  var country=document.getElementById('COUNTRY_CODE').textContent;
-      
-	  function bindButtons()
-	  {
-	      console.log("1");
-
           console.log("2");
 		  
 		  document.getElementById('urlSubmit').addEventListener('click', function(event){
@@ -35,7 +34,8 @@
 			{
 			  console.log("Error in Network!");
 			}
-            
+			<!-- -->
+            event.preventDefault();
 		  })
       }
 	
