@@ -5,18 +5,18 @@
 	<title> CS 290 Activity 5 </title>
     <script>
 	 <!-- GET REQUEST-->
-      const form=document.getElementById('getForm');
-	  form.AddEventListener('submit',bindButtons);
-
-      function bindButtons()
-	  {
-	      console.log("1");
+      document.addEventListener('DOMContentLoaded', bindButtons);
 		  var city=document.getElementById('CITY_NAME').textContent;
 		  var zip=document.getElementById('ZIP_CODE').textContent;
 		  var country=document.getElementById('COUNTRY_CODE').textContent;
+      
+	  function bindButtons()
+	  {
+	      console.log("1");
+
           console.log("2");
 		  
-		  
+		  document.getElementById('urlSubmit').addEventListener('click', function(event){
             console.log("3");
 			<!--object that can make an HTTP request and return the data it gets from that request.-->
 	  	    var req = new XMLHttpRequest();
@@ -36,14 +36,14 @@
 			  console.log("Error in Network!");
 			}
             
-		 
+		  })
       }
 	
     </script>
 	 
   </head>
   <body>
-    <form id="getForm">
+    <form>
       <fieldset>
         <legend>Weather Input (GET) </legend>
         <label for="CITY_NAME"> City: </label>
@@ -52,13 +52,14 @@
         <input type="text" name="ZIP_CODE" id="ZIP_CODE">
 		<label for="COUNTRY_CODE"> Country: </label>
         <input type="text" name="COUNTRY_CODE" id="COUNTRY_CODE">
-        <button type="submit" id="urlSubmit"> Submit </button>
+        <input type="submit" id="urlSubmit">
       </fieldset>
     </form>
     <div>
       <h2>Result</h2>
       <ul>
         <li><span>Current Weather:</span><span id="weather"></span></li>
+    
       </ul>
     </div>
   </body>
