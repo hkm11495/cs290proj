@@ -9,7 +9,7 @@
       function bindButtons(){
 	    var city=document.getElementById('CITY_NAME').textContent;
 		var zip=document.getElementById('ZIP_CODE').textContent;
-		var country=documnet.getElementById('COUNTRY_CODE').textContent;
+		var country=document.getElementById('COUNTRY_CODE').textContent;
         
 		<!--Click submit button-->
 		document.getElementById('urlSubmit').addEventListener('click', function(event){
@@ -34,12 +34,12 @@
   <body>
     <form>
       <fieldset>
-        <legend>URL Shortener</legend>
-        <label for="CITY_NAME"></label>
+        <legend>Weather Input (GET) </legend>
+        <label for="CITY_NAME"> City: </label>
         <input type="text" name="CITY_NAME" id="CITY_NAME">
-		<label for="ZIP_CODE"></label>
+		<label for="ZIP_CODE"> Zipcode: </label>
         <input type="text" name="ZIP_CODE" id="ZIP_CODE">
-		<label for="COUNTRY_CODE"></label>
+		<label for="COUNTRY_CODE"> Country: </label>
         <input type="text" name="COUNTRY_CODE" id="COUNTRY_CODE">
         <input type="submit" id="urlSubmit">
       </fieldset>
