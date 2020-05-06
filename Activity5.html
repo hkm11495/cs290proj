@@ -8,7 +8,8 @@
 
       function bindButtons()
 	  {
-	      var city=document.getElementById('CITY_NAME').textContent;
+	      console.log("in function");
+		  var city=document.getElementById('CITY_NAME').textContent;
 		  var zip=document.getElementById('ZIP_CODE').textContent;
 		  var country=document.getElementById('COUNTRY_CODE').textContent;
         
@@ -26,7 +27,6 @@
 		    <!--response=data retrieved from the request-->
 			if (req.status >=200 && req.status <400)
 			{
-			  var response = JSON.parse(req.responseText);
 		      console.log(JSON.parse(req.responseText));
 			}
 			else
