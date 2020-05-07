@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+	<!--AJAX is trying to call over HTTP where there server is running over HTTPS-->
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="shortcut icon" href="">
 	<title> CS 290 Activity 5 </title>
     <script>
 	 <!-- GET REQUEST-->
@@ -21,12 +23,26 @@
             var apiID='&appid=5254bba1382a3407c2af112214612a51';
 			var rootURL='http://api.openweathermap.org/data/2.5/weather?q=';
 			var comma =',';
-			
+			var getURL;
 			
 			console.log("2");
             console.log("3");
-
-            var getURL=rootURL + city + comma + country + apiID;
+			
+			<!--if zipcode and city is missing-->
+			if (zip == null && city==null)
+			{
+			  return;
+			}
+			<!--search by zip, country-->
+			else if (city == null)
+			{
+			  getURL=rootURL + zip + comma + country + apiID;
+			}
+			else
+			{
+			  getURL=rootURL + city + comma + country + apiID;
+			}
+            
 			console.log(getURL);
 		    <!--false means synchronous request, true=asynchronous-->
             req.open("GET", getURL, true);
@@ -43,7 +59,6 @@
 			  console.log("Error in Network!");
 			  console.log("Error: " + req.status);
 			}
-			
 			<!-- -->
             event.preventDefault();
 		  })
@@ -61,7 +76,7 @@
 		<label for="ZIP_CODE"> Zipcode: </label>
         <input type="text" name="ZIP_CODE" id="ZIP_CODE">
 		<label for="COUNTRY_CODE"> Country: </label>
-        <input type="text" name="COUNTRY_CODE" id="COUNTRY_CODE">
+        <input type="text" name="COUNTRY_CODE" id="COUNTRY_CODE" required>
         <input type="submit" id="urlSubmit">
       </fieldset>
     </form>
