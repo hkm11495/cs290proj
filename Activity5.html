@@ -24,7 +24,7 @@
 		    <!--false means synchronous request, true=asynchronous-->
             req.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&appid=5254bba1382a3407c2af112214612a51", true);
 			console.log("4");
-            req.send(null);
+            
 		    <!--response=data retrieved from the request-->
 			if (req.status >=200 && req.status <400)
 			{
