@@ -31,7 +31,7 @@
 		    <!--false means synchronous request, true=asynchronous-->
             req.open("GET", getURL, true);
 			console.log("4");
-           
+            req.send(null);
 		    <!--response=data retrieved from the request-->
 			if (req.status >=200 && req.status <400)
 			{
@@ -43,7 +43,7 @@
 			  console.log("Error in Network!");
 			  console.log("Error: " + req.status);
 			}
-			 req.send(null);
+			
 			<!-- -->
             event.preventDefault();
 		  })
