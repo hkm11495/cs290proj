@@ -81,7 +81,7 @@
             if(request.status >= 200 && request.status < 400)
 	        {
               var responsePost = JSON.parse(request.responseText);
-              document.getElementById('inputData').textContent = responsePost.INPUT;
+              document.getElementById('inputData').textContent = responsePost['INPUT'];
             } 
 	        else 
 	        {
