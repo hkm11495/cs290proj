@@ -78,7 +78,7 @@
           request.setRequestHeader('Content-Type', 'application/json');
           request.addEventListener('load',function()
 		  {
-            if(request.status >= 200 && req.status < 400)
+            if(request.status >= 200 && request.status < 400)
 	        {
               var responsePost = JSON.parse(request.responseText);
               document.getElementById('inputData').textContent = responsePost;
