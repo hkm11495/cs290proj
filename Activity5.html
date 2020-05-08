@@ -11,7 +11,8 @@
   
 	  document.addEventListener('DOMContentLoaded', bindButtonsGet);
 	  document.addEventListener('DOMContentLoaded'bindButtonsPost);
-      function bindButtonsGet()
+      
+	  function bindButtonsGet()
 	  {
 			var req = new XMLHttpRequest();
 			document.getElementById('urlSubmit').addEventListener('click', function(event)
@@ -68,7 +69,7 @@
 	  
 	  function bindButtonsPost()
 	  {
-		document.getElementById('urlSubmit').addEventListener('click', function(event)
+		document.getElementById('urlSubmit2').addEventListener('click', function(event)
 	    {
           var request = new XMLHttpRequest();
           var payload = {INPUT:null};
