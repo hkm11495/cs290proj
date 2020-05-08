@@ -81,8 +81,10 @@
             if(request.status >= 200 && request.status < 400)
 	        {
               var responsePost = JSON.parse(request.responseText);
+			  console.log(responsePost);
               document.getElementById('inputData').textContent = responsePost['INPUT'];
-            } 
+              console.log(responsePost['INPUT']);
+			} 
 	        else 
 	        {
               console.log("Error in network request: " + request.statusText);
