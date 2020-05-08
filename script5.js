@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-	<!--AJAX is trying to call over HTTP where there server is running over HTTPS-->
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-	<link rel="shortcut icon" href="">
-	<title> CS 290 Activity 5 </title>
-    <script>
+
 	 <!-- GET REQUEST-->
   
 	  document.addEventListener('DOMContentLoaded', bindButtonsGet);
@@ -94,45 +86,4 @@
         event.preventDefault();
       });
 	  }
-    </script>
-	 
-  </head>
-  <body>
-    <form>
-      <fieldset>
-        <legend>Weather Input (GET) </legend>
-        <label for="CITY_NAME"> City: </label>
-        <input type="text" name="CITY_NAME" id="CITY_NAME">
-		<label for="ZIP_CODE"> Zipcode: </label>
-        <input type="text" name="ZIP_CODE" id="ZIP_CODE">
-		<label for="COUNTRY_CODE"> Country: </label>
-        <input type="text" name="COUNTRY_CODE" id="COUNTRY_CODE" required>
-        <input type="submit" id="urlSubmit">
-      </fieldset>
-    </form>
-    <div>
-      <h2>Get</h2>
-      <ul>
-        <li><span>Current Temperature:</span><span id="weather"></span></li>
     
-      </ul>
-    </div>
-	 <form>
-      <fieldset>
-        <legend>Input (POST) </legend>
-
-		<label for="INPUT"> Input: </label>
-        <input type="text" name="INPUT" id="INPUT" required>
-        <input type="submit" id="urlSubmit2">
-      </fieldset>
-    </form>
-		
-		<div>
-      <h2>Post</h2>
-      <ul>
-        <li><span>Input:</span> <span id="inputData"></span></li>
-    
-      </ul>
-    </div>
-  </body>
-</html>
