@@ -30,12 +30,12 @@
 			
 			<!--if zipcode and city is missing-->
 			
-			if (zip.value.length == 0 && city.value.length == 0)
+			if (zip.length == 0 && city.length == 0)
 			{
 			  return;
 			}
 			<!--search by zip, country-->
-			else if (city.value.length == 0)
+			else if (city.length == 0)
 			{
 			  getURL=rootURL + zip + comma + country + apiID;
 			}
