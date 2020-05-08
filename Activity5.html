@@ -17,7 +17,7 @@
 	  	    var req = new XMLHttpRequest();
 		    
 			document.getElementById('urlSubmit').addEventListener('click', function(event){
-		    console.log("1");
+		   
 		    var city=document.getElementById('CITY_NAME').value;
 			console.log(city);
 		    var zip=document.getElementById('ZIP_CODE').value;
@@ -53,7 +53,7 @@
 			  
 		      var response=JSON.parse(req.responseText);
 			  console.log(response);
-			  document.getElementById("weather").value=response.main[0];
+			  document.getElementById("weather").textContent=response.main;
 			}
 			else
 			{
