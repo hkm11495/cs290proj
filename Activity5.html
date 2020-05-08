@@ -50,12 +50,13 @@
 		    <!--response=data retrieved from the request-->
 			if (req.status >=200 && req.status <400)
 			{
-			  console.log("5");
-		      console.log(JSON.parse(req.responseText));
+			  
+		      var response=JSON.parse(req.responseText);
+			  console.log(response);
+			  document.getElementById("weather").value=response.main[0];
 			}
 			else
 			{
-			  console.log("Error in Network!");
 			  console.log("Error: " + req.status);
 			}
 			});
@@ -84,7 +85,7 @@
     <div>
       <h2>Result</h2>
       <ul>
-        <li><span>Current Weather:</span><span id="weather"></span></li>
+        <li><span>Current Temperature:</span><span id="weather"></span></li>
     
       </ul>
     </div>
