@@ -82,7 +82,7 @@
 	        {
               var responsePost = JSON.parse(request.responseText);
 			  console.log(responsePost);
-              document.getElementById('inputData').textContent = responsePost['INPUT'];
+              document.getElementById('inputData').textContent = responsePost['json'].INPUT;
               console.log(responsePost['INPUT']);
 			} 
 	        else 
