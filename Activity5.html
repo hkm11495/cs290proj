@@ -53,7 +53,8 @@
 			  
 		      var response=JSON.parse(req.responseText);
 			  console.log(response);
-			  document.getElementById("weather").textContent=response.main;
+			  var temperature=response.main
+			  document.getElementById("weather").textContent=temperature['temp'];
 			}
 			else
 			{
