@@ -27,6 +27,6 @@
 
 /* Add a color to the active/current link */
 .menu a.isActive {
-  background-color: #2F4F4F;
+  background-color: darkCyan;
   color: white;
 }
