@@ -9,18 +9,16 @@
     <script>
 	 <!-- GET REQUEST-->
   
-	  document.addEventListener('DOMContentLoaded', bindButtons);
-
-      function bindButtons()
+	  document.addEventListener('DOMContentLoaded', bindButtonsGet);
+	  document.addEventListener('DOMContentLoaded'bindButtonsPost);
+      function bindButtonsGet()
 	  {
-		  	<!--object that can make an HTTP request and return the data it gets from that request.-->
-	  	    var req = new XMLHttpRequest();
-		    
+
 			document.getElementById('urlSubmit').addEventListener('click', function(event)
 			{
-		   
+		    <!--object that can make an HTTP request and return the data it gets from that request.-->
+	  	    var req = new XMLHttpRequest();
 		    var city=document.getElementById('CITY_NAME').value;
-			console.log(city);
 		    var zip=document.getElementById('ZIP_CODE').value;
 		    var country=document.getElementById('COUNTRY_CODE').value;
             var apiID='&appid=5254bba1382a3407c2af112214612a51';
@@ -62,12 +60,37 @@
 			  console.log("Error: " + req.status);
 			}
 			});
-			<!-- -->
+		
 			req.send(null);
             event.preventDefault();
 		  })
       }
-	
+	  
+	  function bindButtonsPost()
+	  {
+		document.getElementById('urlSubmit').addEventListener('click', function(event)
+	    {
+          var request = new XMLHttpRequest();
+          var payload = {INPUT:null};
+          payload.INPUT = document.getElementById('INPUT').value;
+          request.open('POST', 'http://httpbin.org/post', true);
+          request.setRequestHeader('Content-Type', 'application/json');
+          request.addEventListener('load',function()
+		  {
+            if(request.status >= 200 && req.status < 400)
+	        {
+              var responsePost = JSON.parse(request.responseText);
+              document.getElementById('inputData').textContent = responsePost;
+            } 
+	        else 
+	        {
+              console.log("Error in network request: " + request.statusText);
+            }
+	      });
+        request.send(JSON.stringify(payload));
+        event.preventDefault();
+      });
+	  }
     </script>
 	 
   </head>
@@ -85,9 +108,26 @@
       </fieldset>
     </form>
     <div>
-      <h2>Result</h2>
+      <h2>Get</h2>
       <ul>
         <li><span>Current Temperature:</span><span id="weather"></span></li>
+    
+      </ul>
+    </div>
+	 <form>
+      <fieldset>
+        <legend>Input (POST) </legend>
+
+		<label for="INPUT"> Country: </label>
+        <input type="text" name="INPUT" id="INPUT" required>
+        <input type="submit" id="urlSubmit2">
+      </fieldset>
+    </form>
+		
+		<div>
+      <h2>Post</h2>
+      <ul>
+        <li><span>Input:</span> <span id="inputData"></span></li>
     
       </ul>
     </div>
