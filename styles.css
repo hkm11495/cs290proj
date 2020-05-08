@@ -1,3 +1,8 @@
+
+
+/*Used for formatting the navigation: https://www.w3schools.com/howto/howto_js_topnav.asp */
+
+
 /* Add a black background color to the top navigation */
 .menu {
   background-color: #333;
@@ -22,6 +27,6 @@
 
 /* Add a color to the active/current link */
 .menu a.isActive {
-  background-color: #4CAF50;
+  background-color: #2F4F4F;
   color: white;
 }
