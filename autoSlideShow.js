@@ -1,16 +1,30 @@
 /*https://www.w3schools.com/w3css/w3css_slideshow.asp*/
 
-var slideIndex = 0;
-carousel();
+window.addEventListener('DOMContentLoaded', startShow)
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("slideShow");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 3500); // Change image every 2 seconds
+var slideIndex = 0;
+var numSlides=4;
+
+function startShow()
+{
+	setInterval(slideshow,5000);
+	
+}
+
+function slideshow()
+{
+	for (var i=0;i<numSlides; i++)
+	{
+		document.getElementById('img'+i).style.visibility='hidden';
+	}
+	
+	document.getElementById('img'+slideIndex).style.visibility='visible';
+	
+	slideIndex++;
+	
+	if (slideIndex == 4)
+	{
+		slideIndex=0;
+	}
+	
 }
