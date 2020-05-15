@@ -7,6 +7,10 @@ var numSlides=4;
 
 function startShow()
 {
+	for (var i=0;i<numSlides; i++)
+	{
+		document.getElementsByClassName('slideShow')[i].style.visibility='hidden';
+	}
 	setInterval(slideshow,5000);
 	
 }
