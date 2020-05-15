@@ -1,17 +1,16 @@
-var slideIndex=0;
+/*https://www.w3schools.com/w3css/w3css_slideshow.asp*/
 
-var x=document=getElementsByClassName("slideShow");	
-autoSlideshow();
+var slideIndex = 0;
+carousel();
 
-setInterval(function autoSlideshow()
-{
-
-	
-    x[slideIndex].style.display="block";
-	slideIndex++;
-	if (slideIndex > x.length-1)
-	{
-		slideIndex=0
-	}
-	
-}, 3500);
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3500); // Change image every 2 seconds
+}
