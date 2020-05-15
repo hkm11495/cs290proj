@@ -7,7 +7,8 @@ var numSlides=4;
 
 function startShow()
 {
-	for (var i=0;i<numSlides; i++)
+	//initializes the last image
+	for (var i=0;i<numSlides-1; i++)
 	{
 		document.getElementsByClassName('slideShow')[i].style.visibility='hidden';
 	}
