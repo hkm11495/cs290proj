@@ -40,4 +40,6 @@
 	border-radius: 8px;
 	height: 500px;
 	width: 600px;
+	position: relative;
+	left: 30px;
 }
