@@ -15,8 +15,7 @@ function slideshow()
 {
 	for (var i=0;i<numSlides; i++)
 	{
-		var imgID= "img" + i;
-		document.getElementById(imgID).style.visibility='hidden';
+		document.getElementById('img'+i).style.visibility='hidden';
 	}
 	
 	document.getElementById('img'+slideIndex).style.visibility='visible';
