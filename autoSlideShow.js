@@ -15,7 +15,7 @@ function slideshow()
 {
 	for (var i=0;i<numSlides; i++)
 	{
-		document.getElementsByClassName('slideShow')[slideIndex].style.visibility='hidden';
+		document.getElementsByClassName('slideShow')[i].style.visibility='hidden';
 	}
 	
 	document.getElementsByClassName('slideShow')[slideIndex].style.visibility='visible';
