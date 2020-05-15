@@ -15,10 +15,10 @@ function slideshow()
 {
 	for (var i=0;i<numSlides; i++)
 	{
-		document.getElementById('img'+i).style.visibility='hidden';
+		document.getElementsByClassName('slideShow')[slideIndex].style.visibility='hidden';
 	}
 	
-	document.getElementById('img'+slideIndex).style.visibility='visible';
+	document.getElementsByClassName('slideShow')[slideIndex].style.visibility='visible';
 	
 	slideIndex++;
 	
