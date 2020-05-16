@@ -44,7 +44,7 @@
 
 .slideShow
 {
-	border-radius: 8px;
+	
 	height: 500px;
 	width: 600px;
 	display: inline-block;
@@ -69,9 +69,9 @@
 	position: absolute;
 	right: 200px;
 	width: 400 px;
-	border: 1px dotted blue;
+	top: 20px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 25px;
+	font-size: 50px;
 	text-align: center;
 	color: gray;
 }
@@ -79,12 +79,13 @@
 .lineBreak
 {
 	color:darkCyan;
+	font-size: 100px;
 }
 
 
 .myName
 {
 	
-	color: dimgray;
-	font-size: 50px;
+	color: Black;
+	font-size: 100px;
 }
