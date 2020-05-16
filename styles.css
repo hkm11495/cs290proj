@@ -48,14 +48,15 @@
 	float: left;
 }
 
+.container
+{
+	align-content:left;
+}
+
 .intro
 {
 
-	float: left;
-	display: inline:block;
+	margin: 0 auto;
+	display: inline-block;
 }
 
-.about
-{
-	margin-top: 650px;
-}
