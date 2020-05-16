@@ -110,10 +110,16 @@ html,body
 
 .scrollRight
 {
+	display: inline-block;
+	position: absolute;
 	left:590px;	
+	top:500px;
 }
 
 .scrollLeft
 {
-	left:10px;	
+	display: inline-block;
+	position: absolute;
+	left:10px;
+	top:500px;	
 }
