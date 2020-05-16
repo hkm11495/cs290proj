@@ -49,9 +49,15 @@
 	vertical-align: middle;
 }
 
+.Images
+{
+	float: left
+
+}
 
 .intro
 {
+	float: left
 	display: inline;
 }
 
