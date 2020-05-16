@@ -4,6 +4,12 @@
 
 
 /* Add a black background color to the top navigation */
+
+html,body
+{
+	height=100%
+}
+
 .menu 
 {
   background-color: #333;
@@ -92,4 +98,10 @@
 	padding-top:10px;
 	color: Black;
 	font-size: 85px;
+}
+
+.About
+{
+	position:absolute;
+	top: 600px;
 }
