@@ -116,7 +116,9 @@ button {
     outline:none;
 	display: inline-block;
 	position: absolute;
-	font-size: 14px;
+	font-size: 25px;
+	color: white;
+	font-style:bold;
 }
 
 .scrollRight
