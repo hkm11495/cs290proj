@@ -41,6 +41,7 @@
 	height: 500px;
 	width: 600px;
 	position: absolute;
-	top: 70 px;
+	top: 100 px;
+	left: 0 px;
 	z-index:-1;
 }
