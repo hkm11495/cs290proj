@@ -67,7 +67,7 @@
 .Intro
 {
 	position: absolute;
-	right: 200px;
+	right: 10px;
 	width: 400 px;
 	top: 20px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -79,7 +79,6 @@
 .lineBreak
 {
 	color:darkCyan;
-	font-size: 100px;
 }
 
 
