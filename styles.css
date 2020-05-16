@@ -45,3 +45,15 @@
 	top: 60px;
 	z-index:-1;
 }
+
+.intro
+{
+	position: absolute;
+	left: 10px;
+}
+
+.about
+{
+	position: absolute;
+	top: 80px;
+}
