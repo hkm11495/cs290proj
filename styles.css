@@ -42,5 +42,6 @@
 	width: 600px;
 	position: absolute;
 	left: 0;
+	top: 60px;
 	z-index:-1;
 }
