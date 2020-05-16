@@ -46,17 +46,17 @@
 	top: 60px;
 	z-index:-1;
 	float: left;
+	vertical-align: middle;
 }
 
 .container
 {
-	align-content:left;
+	
 }
 
 .intro
 {
 
-	margin: right-side;
-	display: inline-block;
+	
 }
 
