@@ -50,7 +50,7 @@
 	display: inline-block;
 	position: absolute;
 	left: 10px;
-	top: 60px;
+	top: 10px;
 	z-index:-1;
 	float: left;
 	vertical-align: middle;
@@ -60,15 +60,15 @@
 {
 	position: absolute;
 	left:0px;
-	width: 800px;
+	width: 1000px;
 	border: 1px dotted red;
 }
 
 .Intro
 {
 	position: absolute;
-	right: 0px;
-	width: 200 px;
+	right: 200px;
+	width: 400 px;
 	border: 1px dotted blue;
 }
 
