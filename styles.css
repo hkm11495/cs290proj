@@ -35,6 +35,13 @@
   color: white;
 }
 
+.container
+{
+	position: relative;
+	width: 100%
+}
+
+
 .slideShow
 {
 	border-radius: 8px;
@@ -51,9 +58,17 @@
 
 .Images
 {
-	float: left
-
+	position: absolute;
+	left:0px;
+	width: 800px;
+	border: 1px dotted red;
 }
 
-
+.Intro
+{
+	position: absolute;
+	right: 0px;
+	width: 200 px;
+	border: 1px dotted blue;
+}
 
