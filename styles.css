@@ -50,10 +50,9 @@
 
 .intro
 {
-	margin-left: 600px;
-	left: 10px;
-	float: right;
-	display: inline-block;
+
+	float: left;
+	display: inline:block;
 }
 
 .about
