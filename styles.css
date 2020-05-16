@@ -107,19 +107,26 @@ html,body
 	left:10px;
 }
 
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	display: inline-block;
+	position: absolute;
+	font-size: 14px;
+}
 
 .scrollRight
 {
-	display: inline-block;
-	position: absolute;
 	left:590px;	
 	top:490px;
 }
 
 .scrollLeft
 {
-	display: inline-block;
-	position: absolute;
 	left:10px;
 	top:490px;	
 }
