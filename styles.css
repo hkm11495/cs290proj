@@ -40,10 +40,12 @@
 	border-radius: 8px;
 	height: 500px;
 	width: 600px;
+	display: inline-block;
 	position: absolute;
 	left: 10px;
 	top: 60px;
 	z-index:-1;
+	float: left;
 }
 
 .intro
@@ -51,6 +53,7 @@
 	margin-left: 600px;
 	left: 10px;
 	float: right;
+	display: inline-block;
 }
 
 .about
