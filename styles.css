@@ -67,7 +67,7 @@ html,body
 	position: absolute;
 	left:0px;
 	width: 750px;
-	border: 1px dotted red;
+	
 }
 
 .Intro
@@ -104,4 +104,16 @@ html,body
 {
 	position:absolute;
 	top: 600px;
+	left:10px;
+}
+
+
+.scrollRight
+{
+	left:590px;	
+}
+
+.scrollLeft
+{
+	left:10px;	
 }
