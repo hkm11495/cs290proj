@@ -116,7 +116,7 @@ button {
     outline:none;
 	display: inline-block;
 	position: absolute;
-	font-size: 25px;
+	font-size: 40px;
 	color: white;
 	font-style:bold;
 }
@@ -124,11 +124,11 @@ button {
 .scrollRight
 {
 	left:590px;	
-	top:490px;
+	top:470px;
 }
 
 .scrollLeft
 {
 	left:10px;
-	top:490px;	
+	top:470px;	
 }
