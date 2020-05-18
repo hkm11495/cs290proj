@@ -166,10 +166,10 @@ h2
 .Education
 {
 	width:675px;
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	left: 10px;
-	top: 10px;
+	top: 30px;
 }
 
 .TechnicalSkills
