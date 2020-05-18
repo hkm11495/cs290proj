@@ -13,7 +13,7 @@ html,body
 
 button 
 {
-    background-color: Transparent;
+  
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
@@ -21,8 +21,6 @@ button
     outline:none;
 	display: inline-block;
 	position: absolute;
-	font-size: 40px;
-	color: white;
 	font-style:bold;
 }
 
@@ -141,12 +139,20 @@ h2
 
 .scrollRight
 {
+	background-color: Transparent;
+   	font-size: 40px;
+	color: white;
+	font-style:bold;
 	left:590px;	
 	top:470px;
 }
 
 .scrollLeft
 {
+	background-color: Transparent;
+	font-size: 40px;
+	color: white;
+	font-style:bold;
 	left:10px;
 	top:470px;	
 }
@@ -171,16 +177,16 @@ h2
 	width: 300px;
 	height: 100px;
 	position:absolute;
-	left: 10;
+	left: 10px;
 	font-size:20px;
-	top: 10px;
+	top: 500px;
 }
 
 .WorkExperience
 {
 	position:absolute;
-	left: 10px;
-	top: 30px;
+	left: 50%;
+	top: 10px;
 }
 
 .download
