@@ -55,5 +55,5 @@ function leftPicture()
 }
 
 
-buttonRight[0].addEventListener("click",slideshow);
-buttonLeft[0].addEventListener("click",leftPicture);
+buttonRight.addEventListener("click",slideshow);
+buttonLeft.addEventListener("click",leftPicture);
