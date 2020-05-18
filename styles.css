@@ -159,9 +159,11 @@ h2
 
 .Education
 {
-	width=1200px;
+	width:1200px;
 	position: absolute;
 	display: inline-block;
+	left: 10px;
+	top: 10px;
 }
 
 .TechnicalSkills
@@ -170,9 +172,13 @@ h2
 	width: 300px;
 	height: 300px;
 	position:absolute;
+	left: 10px;
+	top: 500px;
 }
 
 .WorkExperience
 {
 	position:absolute;
+	left: 1200px;
+	top: 10px;
 }
