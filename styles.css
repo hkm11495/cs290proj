@@ -162,7 +162,7 @@ h2
 	position: absolute;
 	display: inline-block;
 	left: 10px;
-	top: 10px;
+	top: 30px;
 }
 
 .TechnicalSkills
@@ -179,5 +179,5 @@ h2
 {
 	position:absolute;
 	left: 50%;
-	top: 10px;
+	top: 30px;
 }
