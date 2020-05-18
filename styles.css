@@ -160,6 +160,7 @@ h2
 .TAMU
 {
 	background-color:#500000;	
+	
 }
 
 .Education
@@ -186,7 +187,7 @@ h2
 {
 	position:absolute;
 	left: 50%;
-	top: 10px;
+	top: 30px;
 }
 
 .download
@@ -194,4 +195,6 @@ h2
 	background-color:darkCyan;
 	position:absolute;
 	top:800px;
+	font-size: 25px;
+	font-family:bold;
 }
