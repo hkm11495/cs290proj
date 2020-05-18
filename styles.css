@@ -154,15 +154,14 @@ h2
 
 .TAMU
 {
-	background-color:#500000;
-	position:absoulte;
-	
+	background-color:#500000;	
 }
 
 .Education
 {
 	width=50%;
 	position: absolute;
+	display: inline-block;
 }
 
 .TechnicalSkills
