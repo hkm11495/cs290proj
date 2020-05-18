@@ -169,18 +169,23 @@ h2
 	position: absolute;
 	display: inline-block;
 	left: 10px;
-	top: 30px;
+	top: 50px;
 }
 
 .TechnicalSkills
 {
-	overflow:auto;
-	width: 300px;
-	height: 100px;
+
 	position:absolute;
 	left: 10px;
 	font-size:20px;
 	top: 500px;
+}
+
+.skillsList
+{
+	overflow:auto;
+	width: 300px;
+	height: 100px;
 }
 
 .WorkExperience
