@@ -54,5 +54,6 @@ function leftPicture()
 	return slideIndex;
 }
 
+
 buttonRight[0].addEventListener("click",slideshow);
 buttonLeft[0].addEventListener("click",leftPicture);
