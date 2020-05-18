@@ -139,7 +139,6 @@ h2
 	width: 40px;
 }
 
-
 .scrollRight
 {
 	left:590px;	
@@ -179,6 +178,6 @@ h2
 .WorkExperience
 {
 	position:absolute;
-	left: 1200px;
+	left: 50%;
 	top: 10px;
 }
