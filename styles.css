@@ -159,7 +159,7 @@ h2
 
 .Education
 {
-	width=50%;
+	width=1200px;
 	position: absolute;
 	display: inline-block;
 }
@@ -169,5 +169,10 @@ h2
 	overflow:auto;
 	width: 300px;
 	height: 300px;
+	position:absolute;
 }
 
+.WorkExperience
+{
+	position:absolute;
+}
