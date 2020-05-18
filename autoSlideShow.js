@@ -4,8 +4,8 @@ window.addEventListener('DOMContentLoaded', startShow)
 
 var slideIndex = 0;
 var numSlides=4;
-var buttonRight=document.getElementsByClassName('scrollRight');
-var buttonLeft=document.getElementsByClassName('scrollLeft');
+var buttonRight=document.getElementById('scrollRight');
+var buttonLeft=document.getElementById('scrollLeft');
 
 function startShow()
 {
