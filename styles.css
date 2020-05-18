@@ -158,8 +158,8 @@ h2
 
 .Education
 {
-	width:1200px;
-	position: absolute;
+	width:800px;
+	position: relative;
 	display: inline-block;
 	left: 10px;
 	top: 30px;
@@ -169,15 +169,23 @@ h2
 {
 	overflow:auto;
 	width: 300px;
-	height: 300px;
+	height: 100px;
 	position:absolute;
-	left: 10px;
-	top: 500px;
+	left: 10;
+	font-size:20px;
+	top: 10px;
 }
 
 .WorkExperience
 {
 	position:absolute;
-	left: 50%;
+	left: 10px;
 	top: 30px;
+}
+
+.download
+{
+	background-color:darkCyan;
+	position:absolute;
+	top:700px;
 }
