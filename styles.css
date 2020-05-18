@@ -155,12 +155,20 @@ h2
 .TAMU
 {
 	background-color:#500000;
+	position:absoulte;
 	
 }
 
 .Education
 {
 	width=50%;
+	position: absolute;
 }
 
+.TechnicalSkills
+{
+	overflow:auto;
+	width: 300px;
+	height: 300px;
+}
 
