@@ -133,8 +133,8 @@ h2
 
 .logo
 {
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 }
 
 .scrollRight
@@ -164,11 +164,11 @@ h2
 
 .Education
 {
-	width:690px;
+	width:675px;
 	position: relative;
 	display: inline-block;
 	left: 10px;
-	top: 30px;
+	top: 10px;
 }
 
 .TechnicalSkills
