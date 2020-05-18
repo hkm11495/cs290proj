@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', startShow)
 
 var slideIndex = 0;
 var numSlides=4;
+var buttonRight=document.getElementsByClassName(scrollRight);
+var buttonLeft=document.getElementsByClassName(scrollLeft);
 
 function startShow()
 {
@@ -51,9 +53,6 @@ function leftPicture()
 	document.getElementsByClassName('slideShow')[slideIndex].style.visibility='visible';
 	return slideIndex;
 }
-
-var buttonRight=document.getElementsByClassName(scrollRight);
-var buttonLeft=document.getElementsByClassName(scrollLeft);
 
 buttonRight.addEventListener("click",slideShow);
 buttonLeft.addEventListener("click",leftPicture);
