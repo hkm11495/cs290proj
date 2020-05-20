@@ -3,3 +3,8 @@ form
 	position:absolute;
 	top:400px;
 }
+
+a
+{
+	display: inlin-block;
+}
