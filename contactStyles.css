@@ -4,18 +4,16 @@ form
 	top:400px;
 }
 
-a
-{
-	display: inline-block;
-	color:MidnightBlue;
-	font-size:25px;
-	position:absolute;
-}
-
 img
 {
 	height:40px;
 	width:40px;
 	left: 50%;
-	position: relative;
+}
+
+a
+{
+	display: inline-block;
+	color:MidnightBlue;
+	font-size:25px;
 }
