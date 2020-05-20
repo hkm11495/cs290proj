@@ -21,12 +21,12 @@ span
 	line-height:40px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-style:bold;
-	vertical-align: middle;
-	float:right;
+	
 }
 
 div
 {
-	border:blue;
+	border-style:dashed;
+	border-color:blue;
 	
 }
