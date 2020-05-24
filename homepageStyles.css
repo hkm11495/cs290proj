@@ -22,12 +22,13 @@
 	position:relative;
 	flex:1;
 	border: 1px solid blue;
+	height: 650px;
+	width:50%;
 }
 
 .Intro
 {
 	white-space:nowrap;
-	top: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	text-align: center;
@@ -57,7 +58,6 @@
 .About
 {
 	position:relative;
-	top: 175px;
 	background-color: #ddd;
 }
 
