@@ -18,10 +18,15 @@
 	vertical-align: middle;
 }
 
-
+.Images
+{
+	position:relative;
+	flex:1;
+}
 
 .Intro
 {
+	white-space:nowrap;
 	top: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 40px;
