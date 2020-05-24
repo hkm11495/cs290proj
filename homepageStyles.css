@@ -21,6 +21,7 @@
 {
 	position:relative;
 	flex:1;
+	border: 1px solid blue;
 }
 
 .Intro
@@ -32,7 +33,7 @@
 	text-align: center;
 	color: gray;
 	position: relative;
-	left:40px;
+	border: 1px solid red;
 }
 
 .lineBreak
