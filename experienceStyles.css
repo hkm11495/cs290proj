@@ -4,25 +4,7 @@
 	width: 50px;
 }
 
-.scrollRight
-{
-	background-color: Transparent;
-   	font-size: 40px;
-	color: white;
-	font-style:bold;
-	left:590px;	
-	top:470px;
-}
 
-.scrollLeft
-{
-	background-color: Transparent;
-	font-size: 40px;
-	color: white;
-	font-style:bold;
-	left:10px;
-	top:470px;	
-}
 
 .TAMU
 {
