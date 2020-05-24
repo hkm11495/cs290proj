@@ -1,0 +1,72 @@
+.logo
+{
+	height: 50px;
+	width: 50px;
+}
+
+.scrollRight
+{
+	background-color: Transparent;
+   	font-size: 40px;
+	color: white;
+	font-style:bold;
+	left:590px;	
+	top:470px;
+}
+
+.scrollLeft
+{
+	background-color: Transparent;
+	font-size: 40px;
+	color: white;
+	font-style:bold;
+	left:10px;
+	top:470px;	
+}
+
+.TAMU
+{
+	background-color:#500000;	
+	
+}
+
+.Education
+{
+	width:675px;
+	position: absolute;
+	display: inline-block;
+	left: 10px;
+	top: 50px;
+}
+
+.TechnicalSkills
+{
+
+	position:absolute;
+	left: 10px;
+	font-size:20px;
+	top: 500px;
+}
+
+.skillsList
+{
+	overflow:auto;
+	width: 300px;
+	height: 100px;
+}
+
+.WorkExperience
+{
+	position:absolute;
+	left: 50%;
+	top: 50px;
+}
+
+.download
+{
+	background-color:darkCyan;
+	position:absolute;
+	top:800px;
+	font-size: 25px;
+	font-family:bold;
+}
