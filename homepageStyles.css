@@ -32,8 +32,8 @@
 	font-size: 40px;
 	text-align: center;
 	color: gray;
-	float:middle;
-	vertical-align:center;
+	float:left;
+	
 }
 
 .lineBreak
@@ -56,9 +56,9 @@
 
 .About
 {
-	position:absolute;
-	top: 600px;
-	left:20px;
+	position:relative;
+	top: 20px;
+	left: 20px;
 	background-color: #ddd;
 }
 
