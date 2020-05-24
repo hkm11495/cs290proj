@@ -1,6 +1,7 @@
 .container
 {
 	display:flex;
+	width: 100%;
 }
 
 
@@ -23,7 +24,7 @@
 	flex:1;
 	border: 1px solid blue;
 	height: 650px;
-	width:30%;
+	width:50%;
 }
 
 .Intro
