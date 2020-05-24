@@ -5,26 +5,16 @@
 }
 
 
-.slideShow
-{
-	
-	height: 600px;
-	width: 700px;
-	display: inline-block;
-	position: absolute;
-	top: 10px;
-	z-index:-1;
-	float: left;
-	vertical-align: middle;
-}
 
 .Images
 {
 	position:relative;
+	float: left;
 	flex:1;
 	border: 1px solid blue;
 	height: 650px;
 	width:50%;
+	margin: 0px;
 }
 
 .Intro
@@ -36,6 +26,19 @@
 	color: gray;
 	position: relative;
 	border: 1px solid red;
+}
+
+.slideShow
+{
+	
+	height: 600px;
+	width: 700px;
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	z-index:-1;
+	float: left;
+	vertical-align: middle;
 }
 
 .lineBreak
