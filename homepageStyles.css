@@ -1,6 +1,5 @@
 .container
 {
-	display:flex;
 	width: 100%;
 }
 
@@ -10,10 +9,9 @@
 {
 	position:relative;
 	float: left;
-	flex:1;
 	border: 1px solid blue;
 	height: 650px;
-	width: 720px;
+	width: 50%;
 	margin: 0px;
 }
 
@@ -23,9 +21,9 @@
 	font-size: 40px;
 	text-align: center;
 	color: gray;
-	position: relative;
 	border: 1px solid red;
 	margin:0px;
+	width:50%;
 }
 
 .slideShow
@@ -38,7 +36,6 @@
 	top: 10px;
 	z-index:-1;
 	float: left;
-	vertical-align: middle;
 }
 
 .lineBreak
