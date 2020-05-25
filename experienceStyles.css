@@ -1,5 +1,7 @@
 
 
+
+
 body
 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +25,11 @@ img
 ul
 {
 	list-style-type:circle;
-	color:darkcyan;
+}
+
+li
+{
+	margin:5px;
 }
 
 .logo
@@ -76,7 +82,7 @@ ul
 {
 	overflow:auto;
 	width: 675px;
-	height: 200px;
+	height: 275px;
 	font-size:20px;
 }
 
@@ -85,6 +91,8 @@ ul
 	position:absolute;
 	left: 725px;
 	top: 50px;
+	overflow:auto;
+	height:750px;
 }
 
 .download
@@ -92,9 +100,13 @@ ul
 	background-color: #333;
 	color:white;
 	position:absolute;
-	top:800px;
+    text-align:center;
 	font-size: 25px;
 	font-family:bold;
+	height:40px;
+	top:10px;
+	left:10px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -102,8 +114,10 @@ ul
 {
 	background-color: #333;
 	overflow: hidden;
-	width:100%;
-	border: 1px solid blue;
+	width:98%;
+	position:absolute;
+	height:60px;
+	top:800px;
 }
 
 .degree
