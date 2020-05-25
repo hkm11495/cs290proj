@@ -10,7 +10,7 @@
 	float: left;
 	border: 1px solid blue;
 	height: 650px;
-	width: 45%;
+	width:49%;
 	margin: 0px;
 }
 
@@ -23,8 +23,9 @@
 	border: 1px solid red;
 	margin:0px;
 	float:right;
-	width:48%;
+	width:49%;
 	position:absolute;
+	left:720px;
 }
 
 .slideShow
@@ -59,7 +60,7 @@
 
 .About
 {
-
+	position: absolute;
 	background-color: #ddd;
 	text-align:center;
 	font-family: Arial, Helvetica, sans-serif;
