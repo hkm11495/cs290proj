@@ -7,7 +7,7 @@ form
 img
 {
 	height:400px;
-	width:300px;
+	width:310px;
 	vertical-align:middle;
 	display:inline;
 	padding:10px;
@@ -27,5 +27,36 @@ p
 
 #name
 {
-	top:10px;
+	top:63px;
+	left:300px;
+}
+
+#phone
+{
+	top:128px;
+	left:300px;
+}
+
+#city
+{
+	top:193px;
+	left:300px;
+}
+
+#country
+{
+	top:258px;
+	left:300px;
+}
+
+#linkedin
+{
+	top:325px;
+	left:300px;
+}
+
+#email
+{
+	top:392px;
+	left:300px;
 }
