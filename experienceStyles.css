@@ -1,12 +1,4 @@
 
-
-
-
-body
-{
-	font-family: Arial, Helvetica, sans-serif;
-}
-
 h3
 {
 	color:darkcyan;
@@ -25,6 +17,8 @@ img
 ul
 {
 	list-style-type:circle;
+	font-family: Arial, Helvetica, sans-serif;
+
 }
 
 li
@@ -66,6 +60,8 @@ li
 	display: inline-block;
 	left: 10px;
 	top: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+
 	
 }
 
@@ -76,6 +72,8 @@ li
 	left: 10px;
 	width:675px;
 	top: 430px;
+	font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .skillsList
@@ -93,6 +91,8 @@ li
 	top: 50px;
 	overflow:auto;
 	height:750px;
+	font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .download
@@ -118,6 +118,8 @@ li
 	position:absolute;
 	height:60px;
 	top:800px;
+	font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .degree
