@@ -60,10 +60,11 @@
 .About
 {
 	position: absolute;
-	background-color: #ddd;
+	background-color: darkCyan;
 	text-align:center;
 	font-family: Arial, Helvetica, sans-serif;
-	top:650px;
+	top:700px;
+	color: #333;
 }
 
 .scrollRight
@@ -90,4 +91,6 @@
 {
 	font-size: 16px;
 	text-align: justify;
+	background-color: #333;
+	color: white;
 }
