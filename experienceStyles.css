@@ -8,6 +8,7 @@ img
 {
 	float:left;
 	top:15px;
+	left:15px;
 	left:10px;
 }
 
@@ -23,15 +24,11 @@ img
 .TAMU
 {
 	background-color:#500000;	
-	margin:20px;
-	
 }
 
 .OSU
 {
 	background-color:#DC4405;	
-	margin:20px;
-	
 }
 
 .Education
