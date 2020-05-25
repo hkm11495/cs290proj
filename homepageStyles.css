@@ -10,7 +10,7 @@
 	float: left;
 	border: 1px solid blue;
 	height: 650px;
-	width: 50%;
+	width: 45%;
 	margin: 0px;
 }
 
@@ -23,7 +23,7 @@
 	border: 1px solid red;
 	margin:0px;
 	float:right;
-	width:50%;
+	width:45%;
 }
 
 .slideShow
