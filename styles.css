@@ -7,22 +7,10 @@
 
 html,body
 {
-	height=100%
-	background-color
+	height=100%;
 }
 
-button 
-{
-  
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-	display: inline-block;
-	position: absolute;
-	font-style:bold;
-}
+
 
 h1
 {
