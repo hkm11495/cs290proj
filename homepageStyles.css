@@ -103,6 +103,8 @@
 .TitleFormat
 {
 	margin-top:0px;
-	height 40%;
+	height: 30%;
+	color:white;
+	vertical-align:middle;
 	background-color: darkCyan;
 }
