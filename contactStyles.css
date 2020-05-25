@@ -100,5 +100,14 @@ p
 .commentBlock
 {
 	padding:10px;
+}
+
+.left
+{
+	float:left;
+}
+
+.right
+{
 	float:right;
 }
