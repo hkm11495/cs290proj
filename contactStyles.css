@@ -102,6 +102,12 @@ p
 	padding:10px;
 }
 
+
+#comment
+{
+	height:122px;
+}
+
 .left
 {
 	float:left;
@@ -110,4 +116,26 @@ p
 .right
 {
 	float:right;
+	width:50%;
+}
+
+input[type=text]
+{
+	width:100%;
+	box-sizing: border-box;
+	margin:8px 0;
+}
+
+
+input[type=submit]
+{
+	width:100%;
+	box-sizing: border-box;
+	margin:8px 8px;
+	background-color:darkcyan;
+	cursor:pointer;
+	border:none;
+	font-style:bold;
+	height:24px;
+	font-size:20px;
 }
