@@ -1,154 +1,62 @@
-form
+body
 {
-	position:absolute;
-	top:700px;
-	background-color:#333;
-	color:white;
-	width:98%;
-	padding:20px;
-	font-family: Arial, Helvetica, sans-serif;
+	background-color:gray
 }
 
-img
+h1
 {
-	height:400px;
-	width:310px;
-	vertical-align:middle;
-	display:inline;
-	padding:10px;
-	float:left;
-}
-    
-p
-{
-	top:10px;
-	overflow:hidden;
-	color:gray;
-	font-size:24px;	
-	font-family: Arial, Helvetica, sans-serif;
-	font-style:bold;
-	position:absolute;
-	height:28px;
-	width:300px;
-}
-
-.container
-{
-	vertical-align:middle;
-	justify:middle;
 	width:100%;
-	text-align:left;
-}
-
-#name
-{
-	top:207px;
-	left:600px;
-}
-
-#phone
-{
-	top:274px;
-	left:600px;
-}
-
-#city
-{
-	top:340px;
-	left:600px;
-}
-
-#country
-{
-	top:405px;
-	left:600px;
-}
-
-#linkedin
-{
-	top:470px;
-	left:600px;
-}
-
-#email
-{
-	top:535px;
-	left:600px;
-}
-
-#contact
-{
-    position:absolute;
-	top:200px;
-
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .header
 {
-    position:absolute;
-    width:100%;
-    top:80px;
+    color:#333;
+    background-color:lightgray;
     text-align:center;
-	background-color:gray;
+	position:relative;
+}
+
+img
+{
+	height:200px;
+	width:350px;
+}
+
+.row
+{
+	padding:10px;
+	top:20px;
+}
+
+.column
+{
+	border:2px solid gray;
+	width:350px;
+	background-color:white;
+	text-align:center;
 	font-family: Arial, Helvetica, sans-serif;
-	display:inline-block;
-}
-
-.firstBlock
-{
-	padding:10px;
-}
-
-.lastBlock
-{
-	padding:10px;
-}
-
-.emailBlock
-{
-	padding:10px;
-}
-
-.commentBlock
-{
-	padding:10px;
-}
-
-
-#comment
-{
-	height:122px;
-}
-
-.left
-{
-	float:left;
-	width:50%;
-}
-
-.right
-{
-	float:right;
-	width:50%;
-}
-
-input[type=text]
-{
-	width:100%;
-	box-sizing: border-box;
-	margin:8px 0;
-}
-
-
-input[type=submit]
-{
-	width:100%;
-	box-sizing: border-box;
-	margin:8px 8px;
-	background-color:darkcyan;
-	cursor:pointer;
-	border:none;
+	color:darkcyan;
 	font-style:bold;
-	height:24px;
 	font-size:20px;
+
+}
+
+#column1
+{
+    float:left;
+    padding:20px;
+   
+}
+
+#column2
+{
+    float:left;
+    padding:20px;
+}
+
+#column3
+{
+    float:left;
+    padding:20px;
 }

@@ -28,58 +28,70 @@ p
 	font-family: Arial, Helvetica, sans-serif;
 	font-style:bold;
 	position:absolute;
+	height:28px;
+	width:300px;
+}
+
+.container
+{
+	vertical-align:middle;
+	justify:middle;
+	width:100%;
+	text-align:left;
 }
 
 #name
 {
 	top:207px;
-	left:50%;
+	left:600px;
 }
 
 #phone
 {
 	top:274px;
-	left:50%;
+	left:600px;
 }
 
 #city
 {
 	top:340px;
-	left:50%;
+	left:600px;
 }
 
 #country
 {
 	top:405px;
-	left:50%;
+	left:600px;
 }
 
 #linkedin
 {
 	top:470px;
-	left:50%;
+	left:600px;
 }
 
 #email
 {
 	top:535px;
-	left:50%;
+	left:600px;
 }
 
 #contact
 {
     position:absolute;
 	top:200px;
-	left:30%;
+
 }
 
 .header
 {
     position:absolute;
     width:100%;
+    top:80px;
     text-align:center;
 	background-color:gray;
 	font-family: Arial, Helvetica, sans-serif;
+	display:inline-block;
 }
 
 .firstBlock
