@@ -8,7 +8,6 @@
 {
 	position:relative;
 	float: left;
-	border: 1px solid blue;
 	height: 650px;
 	width:49%;
 	margin: 0px;
@@ -20,12 +19,12 @@
 	font-size: 40px;
 	text-align: center;
 	color: gray;
-	border: 1px solid red;
+
 	margin:0px;
 	float:right;
 	width:49%;
 	position:absolute;
-	left:720px;
+	left:800px;
 }
 
 .slideShow
