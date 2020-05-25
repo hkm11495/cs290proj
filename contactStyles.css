@@ -4,6 +4,9 @@ form
 	top:700px;
 	background-color:#333;
 	color:white;
+	width:98%;
+	padding:20px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 img
@@ -29,43 +32,52 @@ p
 
 #name
 {
-	top:107px;
+	top:207px;
 	left:50%;
 }
 
 #phone
 {
-	top:174px;
+	top:274px;
 	left:50%;
 }
 
 #city
 {
-	top:240px;
+	top:340px;
 	left:50%;
 }
 
 #country
 {
-	top:305px;
+	top:405px;
 	left:50%;
 }
 
 #linkedin
 {
-	top:370px;
+	top:470px;
 	left:50%;
 }
 
 #email
 {
-	top:435px;
+	top:535px;
 	left:50%;
 }
 
 #contact
 {
     position:absolute;
-	top:100px;
+	top:200px;
 	left:30%;
+}
+
+.header
+{
+    position:absolute;
+    width:100%;
+    text-align:center;
+	background-color:gray;
+	font-family: Arial, Helvetica, sans-serif;
 }
