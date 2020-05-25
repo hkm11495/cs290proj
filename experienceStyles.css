@@ -113,7 +113,7 @@ li
 .footer
 {
 	background-color: #333;
-	overflow: hidden;
+	overflow:hidden;
 	width:98%;
 	position:absolute;
 	height:60px;
