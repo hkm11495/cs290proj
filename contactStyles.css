@@ -1,19 +1,20 @@
 form
 {
 	position:absolute;
-	top:400px;
+	top:700px;
 }
 
 img
 {
-	height:46px;
-	width:46px;
+	height:400px;
+	width:300px;
 	vertical-align:middle;
 	display:inline;
 	padding:10px;
+	float:left;
 }
     
-span
+p
 {
 	top:10px;
 	overflow:hidden;
@@ -21,6 +22,10 @@ span
 	font-size:24px;	
 	font-family: Arial, Helvetica, sans-serif;
 	font-style:bold;
-	padding:25px;
-	height:25px;
+	position:absolute;
+}
+
+#name
+{
+	top:10px;
 }
