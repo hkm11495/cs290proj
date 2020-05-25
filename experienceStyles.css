@@ -7,8 +7,6 @@ body
 img
 {
 	float:left;
-	top:15px;
-	left:10px;
 	padding:10px;
 }
 
@@ -24,14 +22,14 @@ img
 .TAMU
 {
 	background-color:#500000;	
-	padding:10px;
+	margin:20px;
 	
 }
 
 .OSU
 {
 	background-color:#DC4405;	
-	padding:10px;
+	margin:120px;
 	
 }
 
