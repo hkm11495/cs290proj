@@ -95,4 +95,6 @@
 	color: white;
 	padding: 10px;
 	margin-bottom:0px;
+	display: inline-block;
+	width: 90%;
 }
