@@ -52,9 +52,18 @@
 
 .download
 {
-	background-color:darkCyan;
+	background-color: #333;
+	color:white;
 	position:absolute;
 	top:800px;
 	font-size: 25px;
 	font-family:bold;
+}
+
+
+.footer
+{
+	background-color: #333;
+	overflow: hidden;
+	
 }
