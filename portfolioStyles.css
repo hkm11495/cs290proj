@@ -1,4 +1,40 @@
+body
+{
+	background-color:gray
+}
+
+h1
+{
+	width:100%;
+}
+
+
+.row
+{
+	padding:10px;
+}
+
 .column
 {
-	
+	border:2px solid gray;
+	width:25%;
+	background-color:white;
+}
+
+#column1
+{
+    float:left;
+    padding:20px;
+}
+
+#column2
+{
+    float:left;
+    padding:20px;
+}
+
+#column3
+{
+    float:left;
+    padding:20px;
 }
