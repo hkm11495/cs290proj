@@ -1,3 +1,7 @@
+body
+{
+	background-color:gray;
+}
 
 h3
 {
@@ -5,6 +9,7 @@ h3
 	margin:0px;
 
 }
+
 
 img
 {
@@ -59,10 +64,10 @@ li
 	position: absolute;
 	display: inline-block;
 	left: 10px;
-	top: 50px;
+	top: 70px;
 	font-family: Arial, Helvetica, sans-serif;
-
-	
+	background-color:white;
+	padding:10px;
 }
 
 .TechnicalSkills
@@ -71,9 +76,10 @@ li
 	position:absolute;
 	left: 10px;
 	width:675px;
-	top: 430px;
+	top: 480px;
 	font-family: Arial, Helvetica, sans-serif;
-
+	background-color:white;
+	padding:10px;
 }
 
 .skillsList
@@ -88,11 +94,13 @@ li
 {
 	position:absolute;
 	left: 725px;
-	top: 50px;
+	top: 70px;
+	right:10px;
 	overflow:auto;
-	height:750px;
+	height:765px;
 	font-family: Arial, Helvetica, sans-serif;
-
+    background-color:white;
+    padding:10px;
 }
 
 .download
@@ -114,12 +122,12 @@ li
 {
 	background-color: #333;
 	overflow:hidden;
-	width:98%;
 	position:absolute;
 	height:60px;
 	bottom:10px;
 	font-family: Arial, Helvetica, sans-serif;
-
+    right:10px;
+    left:10px;
 }
 
 .degree
