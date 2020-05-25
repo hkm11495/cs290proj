@@ -39,13 +39,13 @@ img
 	left: 10px;
 	width:675px;
 	font-size:20px;
-	top: 400px;
+	top: 410px;
 }
 
 .skillsList
 {
 	overflow:auto;
-	width: 300px;
+	width: 675px;
 	height: 100px;
 }
 
