@@ -1,7 +1,15 @@
 
+
 body
 {
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3
+{
+	color:darkcyan;
+	margin:0px;
+
 }
 
 img
@@ -12,23 +20,37 @@ img
 	left:10px;
 }
 
+ul
+{
+	list-style-type:circle;
+	color:darkcyan;
+}
 
 .logo
 {
 	height: 75px;
 	width: 75px;
+	padding:10px;
 }
 
 
 
 .TAMU
 {
-	background-color:#500000;	
+	background-color:#500000;
+	padding:10px;
+	height:150px;
+	margin:5px;
+		
 }
 
 .OSU
 {
 	background-color:#DC4405;	
+	padding:10px;
+	height:100px;
+	margin:5px;
+
 }
 
 .Education
@@ -38,6 +60,7 @@ img
 	display: inline-block;
 	left: 10px;
 	top: 50px;
+	
 }
 
 .TechnicalSkills
@@ -46,7 +69,7 @@ img
 	position:absolute;
 	left: 10px;
 	width:675px;
-	top: 410px;
+	top: 430px;
 }
 
 .skillsList
