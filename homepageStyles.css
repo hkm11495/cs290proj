@@ -130,3 +130,30 @@ button
 	vertical-align:middle;
 	background-color: darkCyan;
 }
+
+.download
+{
+	background-color: #333;
+	color:white;
+	position:absolute;
+    text-align:center;
+	font-size: 25px;
+	font-family:bold;
+	height:40px;
+	top:10px;
+	left:10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer
+{
+	background-color: #333;
+	overflow:hidden;
+	position:absolute;
+	height:60px;
+	top:870px;
+	font-family: Arial, Helvetica, sans-serif;
+    right:10px;
+    left:10px;
+}
