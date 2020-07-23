@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>CS 340 Project</title>
+		<link rel="stylesheet" type="text/css" href="navigationBar.css">
+		<link rel="stylesheet" type="text/css" href="generalStyles.css">
+	</head>
+
+	<body>
+	
+		<!--Menu Bar -->
+		<div class="menu">
+			<a href="index.html"> Home Page </a>
+			<a href="newCustomer.html"> New Customer </a>
+			<a href="dogSignUp.html"> Dog Stay Sign Up </a>
+			<a href="activitySchedule.html"> Activity Schedule </a>
+			<a class="isActive" href="bill.html"> Customer Bill </a>
+		</div>
+		
+		<!-- Page Information-->
+		<div class="container">	
+			<h1 class="Title">
+			Doggy Daycare Customer Bill
+			</h1>
+			<p class="paragraph">
+			This page shows how much the customer owes for their dogs.
+			</p>
+				<div id="row">
+					<form id ="form1" method="post">
+						<h3> Select Customer from drop down: </h3>
+						<label for="custDrop"> Customer:</label>
+						<select id="custDrop" name="custDrop"></select><br>
+						<input type ="submit" id="submit"/>
+					</form>
+				</div>
+
+		
+			<div id="row">
+					<p>* This will all be populated from the customer drop down.</p>
+			</div>
+			<div id="row">
+				<h2>Customer Information</h2>
+			</div>
+			<div id="row">
+				<table>
+					<tr> 
+						<th> First Name </th>
+						<th> Last Name </th>
+						<th> Address</th>
+						<th> City </th>
+						<th> State </th>
+						<th> Zip </th>
+						<th> Phone # </th>
+						<th> E-mail </th>
+					</tr>
+					<tr>
+						<td> John </td>
+						<td> Doe </td>
+						<td> 111 1st St</td>
+						<td> Houston </td>
+						<td> Texas </td>
+						<td> 77001 </td>
+						<td> 123-456-7891</td>
+						<td> user@email.com </td>
+					</tr>
+				</table>
+			</div>
+			<h2> Customer's Dogs Information </h2>
+			<div id="row">
+				<table>
+					<tr> 
+						<th> Dog Name </th>
+						<th> Age (Years) </th>
+						<th> Breed </th>
+						<th> Stay Cost ($) </th>
+						<th> Activities Cost ($) </th>
+					</tr>
+					<tr>
+						<td> Sparky</td>
+						<td> 2 </td>
+						<td> Beagle </td>
+						<td> 120 </td>
+						<td> 40 </td>
+					</tr>
+					<tr>
+						<td> Spot</td>
+						<td> 1 </td>
+						<td> Poodle </td>
+						<td> 90 </td>
+						<td> 60 </td>
+					</tr>
+				</table>
+			</div>
+			<div>
+			<h2>TOTAL ($): </h2>
+			<h3 id="totalCost"> </h3>
+			</div>
+		</div>
+		<div id="container2">
+			<img src="IMG_7204.jpeg" class="mediumImage"/>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>CS 340 Project</title>
+		<link rel="stylesheet" type="text/css" href="navigationBar.css">
+		<link rel="stylesheet" type="text/css" href="generalStyles.css">
+	</head>
+
+	<body>
+
+		<!--Menu Bar -->
+		<div class="menu">
+			<a href="index.html"> Home Page </a>
+			<a href="newCustomer.html"> New Customer </a>
+			<a class="isActive" href="dogSignUp.html"> Dog Stay Sign Up </a>
+			<a href="activitySchedule.html"> Activity Schedule </a>
+			<a href="bill.html"> Customer Bill </a>
+		</div>
+		
+		<!-- Page Information-->
+		<div class="container">	
+			
+			<h1 class="Title">
+			Doggy Daycare Signup Page
+			</h1>
+				
+			<p class="paragraph">
+			This page signs a dog up for how long their stay will be (over night/day care only) and registers them for any activities the owner wants
+			the dog to participate in.
+			</p>
+			
+			<div id="row">
+				<div>
+					<h2>Stay Sign Up</h2>
+					<form id ="form1" method="post">
+						<h3> Select a dog from the drop down: </h3>
+						<label for="dogDrop"> Dog + Breed:</label>
+						<select id="dogDrop" name="dogDrop"></select><br>
+
+						<h3> Care Type: </h3>
+						<input name="stayType" id="overnight" type="radio" value=1/> Overnight <label for="stayType"></label><br>
+						<input name="stayType" id="daycare" type="radio" value=0/> Daycare <label for="stayType"></label><br>
+
+						<br>
+
+						<h3> Stay Duration: </h3>
+						<label for="startDate"> Start Date of Stay: </label>
+						<input type="date" id="startDate" name="startDate"></input><br>
+						<br>
+						<label for="endDate"> End Date of Stay: </label>
+						<input type="date" id="endDate" name="endDate"></input>
+						<br>
+						<br>
+						<label for="duration"> Length of Stay: </label>
+						<input type="number" id="duration" name="duration" readonly ></input>
+						<br>
+						<label for="baseCost"> Base Cost: </label>
+						<input type="number" id="baseCost" name="baseCost" readonly ></input>
+						<br>
+						<input type="submit" id="submit" />
+						<br>
+					</form>
+				</div>
+				<div>
+					<h2>Activity Sign Up</h2>
+					<form id ="form2" method="post">
+						<h3> Select a dog from the drop down: </h3>
+						<label for="dogDrop"> Dog + Breed:</label>
+						<select id="dogDrop" name="dogDrop"></select><br>
+
+						<h3> Signup for Activity: </h3>
+						<label for="newActivity"> Activity Name: </label>
+						<select id="newActivity" name="newActivity"></select><br>
+
+						<h3> Select Date: </h3>
+						<label for="activityDate"> Activity Date: </label>
+						<select id="activityDate" name="activityDate"></select><br>
+						<br>
+						<input type="submit" id="submit" />
+						<br>
+				</form>
+				</div>
+				<div></div>
+					<img src="IMG_0483.jpg" class="mediumImage"/>
+			</div>
+		
+		</div>
+	<script src="stay.js" ></script>
+	</body>
+</html>

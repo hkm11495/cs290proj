@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>CS 340 Project</title>
+		<link rel="stylesheet" type="text/css" href="navigationBar.css">
+		<link rel="stylesheet" type="text/css" href="generalStyles.css">
+		<script src="updateBut.js"></script>
+	</head>
+
+	<body>
+	
+		<!--Menu Bar -->
+		<div class="menu">
+			<a href="index.html"> Home Page </a>
+			<a href="newCustomer.html"> New Customer </a>
+			<a href="dogSignUp.html"> Dog Stay Sign Up </a>
+			<a class="isActive" href="activitySchedule.html"> Activity Schedule </a>
+			<a href="bill.html"> Customer Bill </a>
+		</div>
+		
+		<!-- Page Information-->
+		<div class="container">	
+			
+			<h1 class="Title">
+			Doggy Daycare Activity Schedule
+			</h1>
+				
+			<p class="paragraph">
+			This page show the scheduled activities for the week and which dogs will particiapte in which activities.
+			This page can also add/delete activities to the schedule.
+			</p>
+			<table>
+				<tr> 
+					<th> Activity Name </th>
+					<th> Date </th>
+					<th> Location </th>
+					<th> Lead Activity Coordinator </th>
+					<th> Dogs Signed Up </th>
+					<th> Activity Capacity </th>
+					<th> Activity Description </th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td> Example: Delete </td>
+					<td> 1/1/2020</td>
+					<td> Bark Park</td>
+					<td> Holly M. </td>
+					<td> 
+						<ul>
+							<li>Sparky</li>
+							<li>Spot</li>
+							<li>Lily</li>
+							<li>Rufus</li>
+						</ul>
+					</td>
+					<td>5</td>
+					<td>Play time activities out  in the bark park. </td>
+					<td> <Button id="deleteBut">Delete Activity</Button> </td>
+					<td> <Button id="upDateBut">Update Activity</Button> </td>
+				</tr>
+			</table>
+			<h2>Add New Activity to the Schedule</h2>
+			<div id="row">
+				<form id ="form1" method="post">
+
+					<h3>Activity Form</h3>
+					<label for="newActivity"> Activity Name: </label>
+					<select id="newActivity" name="newActivity"></select><br>
+
+					<label for="startDate"> Activity Date: </label>
+					<input type="date" id="startDate" name="startDate"></input><br>
+				
+					<label>Location: </label>
+					<div>
+						<input name="locations" id="barkPark" type="radio"/> Bark Park <label for="locations"></label><br>
+						<input name="locations" id="salon" type="radio"/> Salon <label for="locations"></label><br>
+						<input name="locations" id="kennel" type="radio"/> Kennel <label for="locations"></label><br>
+						<input name="locations" id="breakRoom" type="radio"/> Break Room <label for="locations"></label><br>
+						<br>
+						<button>Add Activity</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</body>
+</html>
