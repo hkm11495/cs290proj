@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<title>CS 340 Project</title>
 		<link rel="stylesheet" type="text/css" href="navigationBar.css">
 		<link rel="stylesheet" type="text/css" href="generalStyles.css">
@@ -30,32 +31,32 @@
 			</p>
 			<h2> Add New Customer</h2>
 			<div id="row">
-				<form name="custForm" id ="form1" method="post">
+				<form name="custForm" id ="form1" >
 					<h3> Customer 1: </h3>
 					
-					<label for="fname"> First Name: </label>
-					<input type="text" id="fname" name="fname"/><br>
+					<label for="firstName"> First Name: </label>
+					<input type="text" id="firstName" name="firstName" required /><br>
 					
-					<label for="lname"> Last Name: </label>
-					<input type="text" id="lname" name="lname"/><br>
+					<label for="lastName"> Last Name: </label>
+					<input type="text" id="lastName" name="lastName" required /><br>
 					
 					<label for="address"> Address: </label>
-					<input type="text" id="address" name="address"/><br>
+					<input type="text" id="address" name="address" required /><br>
 					
 					<label for="city"> City: </label>
-					<input type="text" id="city" name="city"/><br>
+					<input type="text" id="city" name="city" required /><br>
 					
 					<label for="state"> State:</label>
-					<select id="state" name="state"></select><br>
+					<select id="state" name="state" required ></select><br>
 					
 					<label for="zipcode"> Zipcode: </label>
-					<input type="text" id="zipcode" name="zipcode"/><br>
+					<input type="text" id="zipcode" name="zipcode" required /><br>
 					
 					<label for "phoneNumber"> Phone Number: </label>
-					<input type="text" id="phoneNumber" name="phoneNumber"/><br>
+					<input type="text" id="phoneNumber" name="phoneNumber" required /><br>
 					
 					<label for "email"> Email: </label>
-					<input type="text" id="email" name="email"/><br>
+					<input type="text" id="email" name="email" required /><br>
 				</form>
 			</div>
 			
@@ -67,8 +68,8 @@
 				<form name="dogForm" id ="dog1" method="post">
 					<h3> Dog 1: </h3>
 					
-					<label for="fname"> Name: </label>
-					<input type="text" id="fname" name="fname"/><br>
+					<label for="dogName"> Name: </label>
+					<input type="text" id="dogName" name="dogName"/><br>
 					
 					<label for="age"> Age: </label>
 					<input type="number" id="age" name="age"/><br>
@@ -84,7 +85,7 @@
 			
 			<div id="submitData">
 				<p> Validate all information is correct and click submit button to store information!</p>
-				<button id="submit"> Submit </button>
+				<button id="submitNew"> Submit </button>
 			</div>
 		</div>
 	<script>

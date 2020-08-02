@@ -1,47 +1,43 @@
-document.getElementById("submit");
-var ownerIDs=[];
-var dogIDs=[];
-var ownerForms=document.getElementsByName("custForm");
+
+//var ownerIDs=[];
+//var dogIDs=[];
+//var ownerForms=document.getElementsByName("custForm");
 document.addEventListener('DOMContentLoaded',sendformInfo);
+//const baseURL='http://flip3.engr.oregonstate.edu:8531/';
 
 function sendformInfo()
 {
-	document.getElementById("submit").addEventListener("click",
-	function(event){
-		//loop through owner forms
-		for (var i=0; i<ownerForms.length; i++)
-		{
+	document.getElementById('submitNew').addEventListener('click', function(event)
+	{
 			var request = new XMLHttpRequest();
 			var formContent={};
-			var baseURL=""; //ENTER
 			//assign form keys and values to object
-			var inputs =ownerForms[i].elements;
+			var inputs =document.getElementsByName("custForm")[0].elements;
+			console.log(inputs);
 			for (var j=0; j<inputs.length;j++)
 			{
 				formContent[inputs[j].name]=(inputs[j].value);
 			}
-			
+
 			//create asynchronous request
-			/*
-			request.open("post", baseURL, true);
+			console.log(formContent);
+			request.open("POST", 'http://flip3.engr.oregonstate.edu:8919/', true);
 			request.setRequestHeader('Content-Type', 'application/json');
 			request.addEventListener('load',function()
 			{
 				if(request.status >= 200 && request.status < 400)
 				{
-					var response = JSON.parse(request.responseText);
-					ownerIds.push(request.id)
+				  var response = JSON.parse(request.responseText);
+				  console.log('response recieved');
 				} 
 				else 
 				{
-					console.log(request.status);
+				  console.log(request.status);
 				}
-			});
-
+	      });
+			console.log(JSON.stringify(formContent))
 			request.send(JSON.stringify(formContent));
 			event.preventDefault();
-			*/
-		}
-	});
+		});
 }
 

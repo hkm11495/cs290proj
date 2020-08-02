@@ -30,18 +30,48 @@
 			This page signs a dog up for how long their stay will be (over night/day care only) and registers them for any activities the owner wants
 			the dog to participate in.
 			</p>
-			
+			<h2>Menu:</h2>
+			<div id="row">
+				<table>
+					<tr>
+						<th>Daycare ($)</th>
+						<td>$20</td>
+					</tr>
+					<tr>
+						<th>Overnight ($/night)</th>
+						<td>$30</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th>Activity Name</th>
+						<th>Cost per Activity</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div id="row">
+				<form id ="form1" method="post">
+					<h3> Select a dog from the drop down: </h3>
+					<label for="dogName"> Dog:</label>
+					<select id="dogName" name="dogName"></select><br>
+					<label for="breed"> Breed:</label>
+					<select id="breed" name="breed"></select><br>
+				</form>	
+			</div>
 			<div id="row">
 				<div>
 					<h2>Stay Sign Up</h2>
-					<form id ="form1" method="post">
-						<h3> Select a dog from the drop down: </h3>
-						<label for="dogDrop"> Dog + Breed:</label>
-						<select id="dogDrop" name="dogDrop"></select><br>
-
+					<form>	
 						<h3> Care Type: </h3>
-						<input name="stayType" id="overnight" type="radio" value=1/> Overnight <label for="stayType"></label><br>
-						<input name="stayType" id="daycare" type="radio" value=0/> Daycare <label for="stayType"></label><br>
+						<label for="dogID" hidden> dogID: </label>
+						<input type="number" id="dogID" name="dogID" hidden></input><br>
+						<input name="overnight" id="overnight" type="radio" value=1/> Overnight <label for="overnight"></label><br>
+						<input name="overnight" id="daycare" type="radio" value=0/> Daycare <label for="overnight"></label><br>
 
 						<br>
 
@@ -56,8 +86,8 @@
 						<label for="duration"> Length of Stay: </label>
 						<input type="number" id="duration" name="duration" readonly ></input>
 						<br>
-						<label for="baseCost"> Base Cost: </label>
-						<input type="number" id="baseCost" name="baseCost" readonly ></input>
+						<label for="stayCost"> Base Cost: </label>
+						<input type="number" id="stayCost" name="stayCost" readonly ></input>
 						<br>
 						<input type="submit" id="submit" />
 						<br>
@@ -65,28 +95,28 @@
 				</div>
 				<div>
 					<h2>Activity Sign Up</h2>
-					<form id ="form2" method="post">
-						<h3> Select a dog from the drop down: </h3>
-						<label for="dogDrop"> Dog + Breed:</label>
-						<select id="dogDrop" name="dogDrop"></select><br>
-
+					<form id ="form2" method="post" action="http://flip3.engr.oregonstate.edu:8531/">
+						
 						<h3> Signup for Activity: </h3>
-						<label for="newActivity"> Activity Name: </label>
-						<select id="newActivity" name="newActivity"></select><br>
-
-						<h3> Select Date: </h3>
-						<label for="activityDate"> Activity Date: </label>
-						<select id="activityDate" name="activityDate"></select><br>
+						<label for="dogID" hidden> dogID: </label>
+						<input type="number" id="dogID" name="dogID" hidden></input><br>
+						
+						<label for="activityName"> Activity Name: </label>
+						<select id="activityName" name="activityName"></select>
 						<br>
+	
 						<input type="submit" id="submit" />
 						<br>
-				</form>
+					</form>
+							<br>
+					<form id ="form2" method="post">
+						<h3> Activities Available: </h3>
+					</form>
 				</div>					
 			</div>
 		</div>
 		<div id="container2">
 				<img src="IMG_0483.jpg" class="mediumImage"/>
-
 		</div>
 	<script src="stay.js" ></script>
 	</body>

@@ -31,57 +31,87 @@
 			This page show the scheduled activities for the week and which dogs will particiapte in which activities.
 			This page can also add/delete activities to the schedule.
 			</p>
+			<form>
+				<h2>Choose Activity to see details</h2>
+					<label for="activityName"> Activity Name: </label>
+					<select id="activityName" name="activityName"></select><br>
+					<p> *Activity Description*<p>
+			</form>
 			<table>
 				<tr> 
-					<th> Activity Name </th>
 					<th> Date </th>
+					<th> Time </th>
+					<th> Dog's Enrolled </th>
+					<th> Activity Coordinator </th>
 					<th> Location </th>
-					<th> Lead Activity Coordinator </th>
-					<th> Dogs Signed Up </th>
 					<th> Activity Capacity </th>
-					<th> Activity Description </th>
 					<th></th>
 					<th></th>
 				</tr>
 				<tr>
-					<td> Example: Delete </td>
-					<td> 1/1/2020</td>
-					<td> Bark Park</td>
-					<td> Holly M. </td>
+					<td> 7/41/2020 </td>
+					<td> 2:00 p.m. </td>
 					<td> 
 						<ul>
 							<li>Sparky</li>
 							<li>Spot</li>
-							<li>Lily</li>
-							<li>Rufus</li>
+							<li>Fluffy</li>
 						</ul>
 					</td>
-					<td>5</td>
-					<td>Play time activities out  in the bark park. </td>
+					<td> Holly M. </td>
+					<td> Bark Park</td>
+					<td> 2 </td>
 					<td> <Button id="deleteBut">Delete Activity</Button> </td>
 					<td> <Button id="upDateBut">Update Activity</Button> </td>
 				</tr>
 			</table>
+			<h2>Create New Activity</h2>
+			<div id="row">
+			<form id ="form1" method="post">
+				<h3>Activity Form</h3>
+				<label for="activityName"> Activity Name: </label>
+				<input type="text" id="activityName" name="activityName"><br>
+				<label for="activityCost">Activity Cost ($):</label>
+					<input type="number" id="activityCost" name="activityCost"/><br>
+				<label for="activityCap">Activity Capacity:</label>
+				<input type="number" id="activityCap" name="activityCap"/><br>
+				<label>Location: </label>
+				<div>
+						<input name="location" id="barkPark" type="radio"/> Bark Park <label for="location"></label><br>
+						<input name="location" id="salon" type="radio"/> Salon <label for="location"></label><br>
+						<input name="location" id="kennel" type="radio"/> Kennel <label for="location"></label><br>
+						<input name="location" id="breakRoom" type="radio"/> Break Room <label for="location"></label><br>
+						<input name="location" id="headquarters" type="radio"/> Headquarters <label for="location"></label><br>
+						<input name="location" id="headquarters" type="radio"/> Room A <label for="location"></label><br>
+						<input name="location" id="headquarters" type="radio"/> Room B <label for="location"></label><br>
+						<input name="location" id="headquarters" type="radio"/> Room C <label for="location"></label><br>
+						<br>
+				</div>
+				<input id="submit" type="submit">
+			</form>
+			</div>
 			<h2>Add New Activity to the Schedule</h2>
 			<div id="row">
 				<form id ="form1" method="post">
 
-					<h3>Activity Form</h3>
-					<label for="newActivity"> Activity Name: </label>
-					<select id="newActivity" name="newActivity"></select><br>
-
-					<label for="startDate"> Activity Date: </label>
+					<h3>Activity Schedule Form</h3>
+					<label for="activityName"> Activity Name: </label>
+					<select id="activityName" name="activityName"></select><br>
+					
+					<label for="startDate"> Date for Activity: </label>
+					<input type="date" id="startDate" name="startDate"></input><br>
+					
+					<label for="startDate"> Time for Activity: </label>
 					<input type="date" id="startDate" name="startDate"></input><br>
 				
-					<label>Location: </label>
-					<div>
-						<input name="locations" id="barkPark" type="radio"/> Bark Park <label for="locations"></label><br>
-						<input name="locations" id="salon" type="radio"/> Salon <label for="locations"></label><br>
-						<input name="locations" id="kennel" type="radio"/> Kennel <label for="locations"></label><br>
-						<input name="locations" id="breakRoom" type="radio"/> Break Room <label for="locations"></label><br>
-						<br>
-						<button>Add Activity</button>
-					</div>
+					<label for="leadActivityCoordinator">Lead Activity Coordinator:</label>
+					<input type="text" id="leadActivityCoordinator" name="leadActivityCoordinator"/><br>
+					
+					<label for="activityDescription">Input Activity Description:</label>
+					<input type="text" id="activityDescription" name="activityDescription"/><br>
+				
+					<input id = "submit" type="submit"/>
+					
 				</form>
 			</div>
 			

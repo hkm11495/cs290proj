@@ -58,16 +58,11 @@ label
 
 }
 
-select
-{
-	float:right;
-
-}
 
 input
 {
-	padding:2px;
-	float:right;
+	padding:3px;
+
 }
 
 button
@@ -92,6 +87,8 @@ table
 {
 	border: 4px solid;
 	border-color:#3CB371;
+	margin-right:20px;
+	margin-top:5px;
 }
 
 th,td
@@ -108,6 +105,8 @@ th,td
 	color: white;
 	font-size:20px;
 	padding:10px;
+	margin-bottom:2px;
+	margin-top:4px;
 }
 .container
 {
